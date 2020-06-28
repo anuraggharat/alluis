@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>The Digital Marketting your company needs!</h1>
+            <button>Start Marketting</button>
+        </div>
+    </section>
+</body>
+</html>
+<script>
+    var tl = anime.timeline({
+            targets: '.container',
+            duration: 100, // Can be inherited
+            easing: 'spring(1, 80, 10, 0)', // Can be inherited
+            direction: 'alternate', // Is not inherited
+            loop: false // Is not inherited
+            });
+            tl.add({
+            width:'60vw',
+            delay: anime.stagger(50),
+            })
+            tl.add({
+                targets:'h1',
+                opacity:1,
+                delay: anime.stagger(50),
+            })
+            tl.add({
+                targets:'button',
+                opacity:1
+            })
+</script>

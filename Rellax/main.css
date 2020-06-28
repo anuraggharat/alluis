@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html, body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #000000;
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
+  html section, body section {
+    padding: 0px;
+    margin: 0px; }
+    html section h1, body section h1 {
+      margin: 0px;
+      padding: 0px; }
+  html .home, body .home {
+    background: url("https://images.pexels.com/photos/1123445/pexels-photo-1123445.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 4rem;
+    color: white; }
+  html .about, body .about {
+    padding: 50px;
+    height: auto; }
+    html .about .w-100, body .about .w-100 {
+      margin: 100px 0px;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+    html .about .row, body .about .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      width: 100%; }
+      html .about .row .half, body .about .row .half {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        html .about .row .half h1, body .about .row .half h1 {
+          font-size: 4rem; }
+        html .about .row .half .btn, body .about .row .half .btn {
+          margin: auto;
+          padding: 10px 25px;
+          width: 25%;
+          font-size: 20px;
+          border-radius: 20px;
+          border: 0px;
+          background: #800080;
+          /* fallback for old browsers */
+          background: -webkit-linear-gradient(to right, #ffc0cb, #800080);
+          /* Chrome 10-25, Safari 5.1-6 */
+          background: linear-gradient(to right, #ffc0cb, #800080);
+          /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          color: white; }
+  html .works .row-flex, body .works .row-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; }
+    html .works .row-flex .card, body .works .row-flex .card {
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 25%;
+      padding: 5px; }
+      html .works .row-flex .card img, body .works .row-flex .card img {
+        width: 100%;
+        max-height: 400px; }
+  html .gallary, body .gallary {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    html .gallary .row, body .gallary .row {
+      padding: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 200px; }
+    html .gallary img, body .gallary img {
+      margin: 10px;
+      width: 30%; }
+  html footer, body footer {
+    padding: 20px;
+    text-align: center; }
+  html .d-flex, body .d-flex {
+    display: flex;
+    justify-content: space-evenly; }
+    html .d-flex .dot, body .d-flex .dot {
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 50%;
+      opacity: .2; }
+
+/*# sourceMappingURL=main.css.map */

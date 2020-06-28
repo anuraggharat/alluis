@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Morphing</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+</head>
+<body>
+    <section>
+      <button id="start" >Start Animation</button>
+      <svg viewBox="0 0 215 110">
+        <polygon class="polymorph" points="215,110 0,110 0,0 47,0 215,0"></polygon>
+      </svg>
+      <div id="content">
+        <h1>Woahh that's a hell of an animation!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, sed.</p>
+      </div>
+    </section>
+    <section >
+      <svg width="200" height="200" class="svg">
+        <polygon points="70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369" class="polygon" />
+      Sorry, your browser does not support inline SVG.
+      </svg>
+    </section>
+</body>
+</html>
+<script>
+
+anime({
+  targets: '.polygon',
+  points: [
+    { value: [
+      '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
+      '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
+    },
+    { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
+    { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
+    { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
+  ],
+  easing: 'easeOutQuad',
+  duration: 2000,
+  loop: true
+});
+
+
+  
+  var btn2=document.getElementById('back')
+  var btn1=document.getElementById('start')
+btn1.onclick=function startMorphing(){
+    var startMorphing=  anime({
+    targets: '.polymorph',
+    points: [
+    { value: '215,110 0,110 0,0 47,0 67,76'},
+    {value:'215,110 0,110 0,0 1,0 67,76'}
+    ],
+    easing: 'easeOutQuad',
+    duration: 1000,
+    loop: false
+    })
+    anime({
+      targets:'#content',
+      opacity:1,
+      delay:500,
+      duration:500,
+    })
+    anime({
+      targets:'#start',
+      opacity:0,
+      delay:100,
+      duration:500
+    })
+  }
+
+var promise =startMorphing.finished.then(()=>{
+  btn2.onclick=function(){
+    alert("hi")
+    var restartMorphing=anime({
+    targets: '.polymorph',
+    points: [
+    { value: '215,110 0,110 0,0 47,0 67,76'},
+    {value:'215,110 0,110 0,0 47,0 215,0'}
+    ],
+    easing: 'easeOutQuad',
+    duration: 2000,
+    loop: false
+  })
+  }
+})
+  
+</script>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+html,body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    section{
+        padding: 0px;
+        margin: 0px;
+        h1{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .home{
+        background: url('https://images.pexels.com/photos/1123445/pexels-photo-1123445.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+        background-position: center;
+        background-size: cover;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 4rem;
+        color: white;
+    }
+    .about{
+        padding: 50px;
+        height: auto;
+        .w-100{
+            margin:100px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            width: 100%;
+            .half{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    font-size: 4rem;
+                }
+                .btn{
+                    margin: auto;
+                    padding: 10px 25px;
+                    width: 25%;
+                    font-size: 20px;
+                    border-radius: 20px;
+                    border: 0px;
+                    background: #800080;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                       color:white;
+                }
+
+            }
+        }
+
+    }
+    .works{
+        .row-flex{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .card{
+                background-color: rgba($color: #fff, $alpha: .2);
+                width: 25%;
+                padding: 5px;
+                img{
+                    width: 100%;
+                    max-height: 400px;
+
+                }
+            }
+        }
+    }
+    .gallary{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .row{
+            padding: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 200px;
+        }
+        img{
+            margin: 10px;
+            width: 30%;
+        }
+    }
+    footer{
+        padding: 20px;
+        text-align: center;
+    }
+    .d-flex{
+        display: flex;
+        justify-content: space-evenly;
+        .dot{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: .2;
+        }
+    }
+}

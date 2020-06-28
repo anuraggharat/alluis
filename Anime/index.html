@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+
+</head>
+<body>
+    
+        <h1>Hello this is using ANIME.JS</h1>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>
+<script>
+        let tl = anime.timeline({
+        easing: 'easeOutExpo',
+        duration: 750
+        });
+
+        tl.add({
+            targets: 'section div',
+            width: '100%',
+            backgroundColor: 'rgb(197, 197, 255)',
+            delay: anime.stagger(200) // increase delay by 100ms for each elements.
+        })
+        tl.add({
+            targets: 'section div',
+            width: '90%',
+            backgroundColor: 'rgb(235, 235, 255)'
+        })
+        tl.add({
+            targets: 'h1',
+            top: '20%',
+            opacity: 1,
+            duration: 4000,
+        }, '-=1600')
+        var squash = anime({
+            targets: 'section',
+            scaleY: '2',
+            scaleX: '2',
+            translateX: '40%',
+            rotate: '45deg',
+            duration: 5000,
+            autoplay: false,
+        })
+        document.querySelector('h1').addEventListener('mouseover', () => {
+            squash.play();
+        })
+</script>
