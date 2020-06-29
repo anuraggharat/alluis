@@ -62,5 +62,7 @@ body {
         text-decoration: none; }
     body .all-links .card:hover {
       transform: translate(-3%, -3%); }
+  body .components {
+    background-color: red; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif; }
+  body section {
+    height: 100vh;
+    width: 100%;
+    background-color: #2d3436;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    body section .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body section .middle .btn {
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-family: "montserrat";
+        text-decoration: none;
+        margin: 30px 0;
+        border: 2px solid #ff7675;
+        padding: 14px 60px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s all ease; }
+      body section .middle .btn::before {
+        background: #ff7675;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        transition: all 0.6s ease; }
+      body section .middle .btn1::before {
+        width: 0%;
+        height: 100%; }
+      body section .middle .btn1:hover::before {
+        width: 100%; }
+      body section .middle .btn2::before {
+        width: 100%;
+        height: 0%; }
+      body section .middle .btn2:hover::before {
+        height: 100%; }
+      body section .middle .btn3::before {
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%, -50%) rotate(45deg); }
+      body section .middle .btn3:hover::before {
+        height: 380%; }
+      body section .middle .btn4::before {
+        width: 100%;
+        height: 0%;
+        transform: translate(-50%, -50%) rotate(-45deg); }
+      body section .middle .btn4:hover::before {
+        height: 380%; }
+    body section .container button {
+      width: 200px;
+      padding: 20px 50px;
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-size: 200%;
+      color: white;
+      transition: .6s ease; }
+    body section .container button:hover {
+      background-position: right !important; }
+    body section .container .button1 {
+      background-image: linear-gradient(to left, #a18cd1 0%, #fbc2eb 100%); }
+    body section .container .button2 {
+      background-image: linear-gradient(to left, #ff8177, #ff867a, #ff8c7f, #f99185, #cf556c, #b12a5b); }
+    body section .container .button3 {
+      background-image: linear-gradient(120deg, #d4fc79, #96e6a1, #d4fc79); }
+    body section .container .button4 {
+      background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%); }
+
+/*# sourceMappingURL=style.css.map */
