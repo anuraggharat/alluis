@@ -41,7 +41,7 @@ body {
     background-color: #222;
     min-height: 100vh;
     color: white;
-    padding-top: 10px;
+    padding: 20px;
     text-align: center; }
     body .all-links .row {
       width: 100%;
@@ -63,6 +63,8 @@ body {
     body .all-links .card:hover {
       transform: translate(-3%, -3%); }
   body .components {
-    background-color: red; }
+    background-color: #130f40; }
+    body .components .row .card {
+      background-color: #30336b; }
 
 /*# sourceMappingURL=style.css.map */
