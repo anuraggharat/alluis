@@ -9,7 +9,9 @@ h4,
 h5 {
   font-family: "Raleway", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 .w3-third img {
   opacity: 0.8;
   cursor: pointer;
