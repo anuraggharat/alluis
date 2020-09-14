@@ -1,10 +1,10 @@
 :root {
-  --primary-black: "#000000";
-  --secondary-black: "#1b1b1b";
-  --primary-gold: "#CE9C6B";
-  --seondary-gold: "#FFD700";
-  --primary-white: "#fff";
-  --seconday-white: "#808080";
+  --primary-black: #000000;
+  --secondary-black: #1b1b1b;
+  --primary-gold: #ce9c6b;
+  --seondary-gold: #ffd700;
+  --primary-white: #ffffff;
+  --seconday-white: #808080;
 }
 
 body {
@@ -19,12 +19,25 @@ body {
 /* general css */
 a {
   text-decoration: none;
-  color: "#fff";
 }
 .primary-button {
-  background-color: var(--primary-gold);
-  color: var(--primary-white);
+  background-color: var(--primary-gold) !important;
+  color: var(--primary-white) !important;
+  padding: 10px 25px;
+  border-radius: 25px;
+  z-index: 2;
 }
+.bg-primary {
+  background-color: var(--primary-gold);
+}
+section {
+  width: 100%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 /* navbar css */
 .logo {
   font-family: cursive !important;
@@ -55,7 +68,9 @@ nav {
 .nav-link {
   color: white;
 }
-
+.scrolled {
+  background-color: var(--primary-black) !important;
+}
 /* home page */
 .hero-image {
   background-image: url("https://images.pexels.com/photos/2061820/pexels-photo-2061820.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
@@ -69,4 +84,34 @@ nav {
   width: 100%;
   background: linear-gradient(#000000, #1b1b1b);
   opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headline {
+  color: var(--primary-white);
+  text-decoration: none;
+  text-align: center;
+  z-index: 100;
+}
+
+/* .description */
+.col-25 {
+  min-width: 25%;
+  color: var(--primary-white);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.col-25 > p,
+.col-25 > h3 {
+  margin: 20px 10px;
+}
+.social-block {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.col-25 > a {
+  color: var(--primary-white);
+  font-size: 1.6rem;
 }
