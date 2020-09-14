@@ -32,6 +32,10 @@ a {
 }
 section {
   width: 100%;
+  padding: 0px;
+}
+iframe {
+  padding: 0px;
 }
 .row {
   display: flex;
@@ -92,7 +96,7 @@ nav {
   color: var(--primary-white);
   text-decoration: none;
   text-align: center;
-  z-index: 100;
+  z-index: 1000;
 }
 
 /* .description */
@@ -114,4 +118,51 @@ nav {
 .col-25 > a {
   color: var(--primary-white);
   font-size: 1.6rem;
+}
+.underline {
+  height: 5px;
+  width: 50%;
+  background-color: var(--primary-gold);
+  margin: 10px auto;
+  margin-bottom: 50px;
+}
+.container {
+  color: var(--primary-white);
+  width: 70%;
+  margin: 0px auto;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+/* footer */
+.footer-image {
+  background: url("https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+}
+footer {
+  color: var(--primary-white);
+  background-color: var(--secondary-black);
+  display: flex;
+  justify-content: space-between;
+}
+footer > div {
+  padding: 20px;
+  width: 33%;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+.footer-social > a {
+  color: var(--primary-gold);
+  font-size: 1.5rem;
+  margin: 0px 5px;
+}
+.developer {
+  text-align: right;
 }
