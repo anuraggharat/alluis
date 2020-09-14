@@ -14,6 +14,7 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: var(--primary-black);
+  color: var(--primary-white);
 }
 
 /* general css */
@@ -33,11 +34,14 @@ a {
 section {
   width: 100%;
   padding: 0px;
+  text-align: center;
 }
 iframe {
   padding: 0px;
 }
 .row {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
 }
@@ -132,6 +136,17 @@ nav {
   margin: 0px auto;
   padding: 100px 0px;
   text-align: center;
+}
+
+/* .price-section  */
+.col-50 {
+  width: 50%;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 /* footer */
