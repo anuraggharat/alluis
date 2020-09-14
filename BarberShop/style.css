@@ -1,10 +1,72 @@
-nav {
-  position: fixed;
+:root {
+  --primary-black: "#000000";
+  --secondary-black: "#1b1b1b";
+  --primary-gold: "#CE9C6B";
+  --seondary-gold: "#FFD700";
+  --primary-white: "#fff";
+  --seconday-white: "#808080";
 }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: var(--primary-black);
+}
+
+/* general css */
+a {
+  text-decoration: none;
+  color: "#fff";
+}
+.primary-button {
+  background-color: var(--primary-gold);
+  color: var(--primary-white);
+}
+/* navbar css */
+.logo {
+  font-family: cursive !important;
+  color: white;
+}
+nav {
+  max-width: 100%;
+  min-width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 5;
+}
+.logo-navbar {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.links-navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+.nav-link {
+  color: white;
+}
+
+/* home page */
 .hero-image {
   background-image: url("https://images.pexels.com/photos/2061820/pexels-photo-2061820.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-size: cover;
   background-position: center;
   height: 100vh;
   width: 100%;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#000000, #1b1b1b);
+  opacity: 0.7;
 }
