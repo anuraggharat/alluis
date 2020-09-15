@@ -10,6 +10,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet">
   </head>
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -40,11 +42,12 @@
     <div class="hero-image">
       <div class="overlay">
         <div class="headline">
-          <h1 class="top-heading">
+          <!-- <h1 class="heading">
             Welcome to Jawed Habib Anandnagar Chendhre
-          </h1>
-          <h3>Great hair doesnt happen by chance,</h3>
-          <h3>they happen by appointment</h3>
+          </h1> -->
+          <h3 class="heading-2">Great hair doesnt happen by chance,</h3>
+          <h3 class="heading-2 mb">they happen by appointment.</h3>
+          <h1>Welcome to <span class="gold-text"><u>Jawed Habib</u></span> Chendhre</h1>
           <a href="#booking" class="primary-button">Get an Appointment</a>
         </div>
       </div>
@@ -74,8 +77,9 @@
     </section>
 
 
+
 <!-- about section -->
-    <section class="about-section" id="#about">
+    <section class="bg-secondary " id="#about">
       <div class="container">
         <h1>Welcome to Jawed Habib Saloon</h1>
         <div class="underline"></div>
@@ -95,6 +99,35 @@
         </p>
       </div>
     </section>
+    <!-- services section -->
+    <section class="services">
+    <div class="attachedoverlay">
+        <div class="container">
+          <h1>Our Servives</h1>
+          <div class="underline"></div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia numquam non quae modi optio quidem nulla
+            ea quis ad.</p>
+        </div>
+        <div class="services-row">
+          <div class="card">
+            <img src="./scissor.svg" width="50" height="50" />
+            <h2>Hair Care</h2>
+          </div>
+          <div class="card">
+            <img src="./comb (1).svg" width="50" height="50" />
+            <h2>Hair Care</h2>
+          </div>
+          <div class="card">
+            <img src="./hairstyle.svg" width="50" height="50" />
+            <h2>Hair Care</h2>
+          </div>
+          <div class="card">
+            <img src="./spa.svg" width="50" height="50" />
+            <h2>Hair Care</h2>
+          </div>
+        </div>
+    </div>
+    </section>
 
     <!-- pricing section -->
     <section class="price-section">
@@ -112,9 +145,10 @@
             alt="Our barber" height="500px" width="100%">
         </div>
         <div class="col-50">
+          <h1>Hair and Beard Treatment</h1>
           <div class="price-item">
             <p>Normal Haircut</p>
-            <p>₹400/-</p>
+            <p class="gold-text"><u>₹400/-</u></p>
           </div>
           <div class="price-item">
             <p>Normal Haircut</p>
@@ -255,7 +289,7 @@
         <div class="overlay">
           <div class="container">
                       <h1>Get the best Hair Treatment in Alibag</h1>
-                      <p>Now you can schedule your appointment using Whatsapp</p>
+                      <p class="mb">Now you can schedule your appointment using Whatsapp</p>
                       <a href="http://" target="_blank" rel="noopener noreferrer" class="primary-button">Schedule Now</a>
           </div>
         </div>
@@ -274,7 +308,7 @@
             href="http://anuraggharat.me"
             target="_blank"
             rel="noopener noreferrer"
-            class="nav-link"
+            class="myname"
           >Anurag</a>
         </div>
       </footer>

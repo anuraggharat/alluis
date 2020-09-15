@@ -11,13 +11,24 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Nunito", sans-serif;
   background-color: var(--primary-black);
   color: var(--primary-white);
 }
 
 /* general css */
+.heading-2 {
+  font-size: 3rem;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+}
+
+.mb {
+  margin-bottom: 50px !important;
+}
+.myname {
+  color: var(--primary-gold);
+}
 a {
   text-decoration: none;
 }
@@ -26,10 +37,21 @@ a {
   color: var(--primary-white) !important;
   padding: 10px 25px;
   border-radius: 25px;
-  z-index: 2;
+  transition: 0.5s linear;
+  z-index: 2000;
+}
+.primary-button:hover {
+  background-color: var(--primary-white) !important;
+  color: var(--primary-gold) !important;
 }
 .bg-primary {
   background-color: var(--primary-gold);
+}
+.bg-secondary {
+  background-color: var(--secondary-black) !important;
+}
+.gold-text {
+  color: var(--primary-gold);
 }
 section {
   width: 100%;
@@ -101,6 +123,26 @@ nav {
   text-decoration: none;
   text-align: center;
   z-index: 1000;
+  padding-top: 100px;
+}
+
+/* services section */
+
+.services-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card {
+  z-index: 10000 !important;
+
+  height: 200px;
+  width: 200px;
+  background-color: var(--secondary-black);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 /* .description */
@@ -109,6 +151,7 @@ nav {
   color: var(--primary-white);
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: left;
 }
 .col-25 > p,
 .col-25 > h3 {
