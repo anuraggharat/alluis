@@ -11,9 +11,13 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  /* font-family: "Nunito", sans-serif; */
   background-color: var(--primary-black);
   color: var(--primary-white);
+  font-family: "Playfair Display", serif;
+}
+.m-0 {
+  margin: 0px;
 }
 
 /* general css */
@@ -67,7 +71,15 @@ iframe {
   display: flex;
   flex-direction: row;
 }
-
+.parallax-1 {
+  background: url("https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* navbar css */
 .logo {
   font-family: cursive !important;
@@ -94,9 +106,13 @@ nav {
   justify-content: space-around;
   width: 50%;
   align-items: center;
+  font-size: 1.2rem;
 }
 .nav-link {
   color: white;
+}
+.nav-link:hover {
+  color: var(--primary-gold);
 }
 .scrolled {
   background-color: var(--primary-black) !important;
@@ -108,6 +124,7 @@ nav {
   background-position: center;
   height: 100vh;
   width: 100%;
+  background-attachment: fixed;
 }
 .overlay {
   height: 100%;
@@ -134,11 +151,7 @@ nav {
   justify-content: space-evenly;
 }
 .card {
-  z-index: 10000 !important;
-
-  height: 200px;
-  width: 200px;
-  background-color: var(--secondary-black);
+  width: 20%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -209,7 +222,6 @@ nav {
 }
 
 .column img {
-  margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
