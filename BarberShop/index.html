@@ -21,7 +21,7 @@
 
   <body>
     <!-- navigation bar -->
-    <nav class="nav-bar">
+    <!-- <nav class="nav-bar" id="nav">
       <div class="logo-navbar">
         <img
           src="./yclogo.png"
@@ -29,6 +29,9 @@
           width="100px"
           height="100px"
         />
+        <a class="menu-toggler" onclick="myFunction()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
       </div>
       <div class="links-navbar">
         <a href="#home" class="nav-link">Home</a>
@@ -36,7 +39,20 @@
         <a href="#home" class="nav-link">Prices</a>
         <a href="#home" class="primary-button">Contact</a>
       </div>
-    </nav>
+    </nav> -->
+    <div class="topnav" id="myTopnav">
+      <div>
+        <img src="./yclogo.png" alt="Jawed Habib Saloon Alibag" width="100px" height="100px" />
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about" onclick="myFunction()">About</a>
+      
+    </div>
 
     <!-- hero image -->
     <div class="hero-image">
@@ -47,7 +63,7 @@
           </h1> -->
           <h3 class="heading-2">Great hair doesnt happen by chance,</h3>
           <h3 class="heading-2 mb">they happen by appointment.</h3>
-          <h1>Welcome to <span class="gold-text"><u>Jawed Habib</u></span> Chendhre</h1>
+          <h1 class="mb">Welcome to <span class="gold-text"><u>Jawed Habib</u></span> Chendhre</h1>
           <a href="#booking" class="primary-button">Get an Appointment</a>
         </div>
       </div>
@@ -100,7 +116,7 @@
     </section>
 
     <!-- services section -->
-    <section class="services">
+    <section class="services" id="about">
     <div class="attachedoverlay">
         <div class="container">
           <h1>Our Servives</h1>
@@ -137,7 +153,7 @@
     </section>
 
     <!-- pricing section -->
-    <section class="price-section">
+    <section class="price-section" id="contact">
       <div class="container">
         <h1>Plans & Pricing</h1>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
@@ -334,6 +350,17 @@
 <script>
   //navbar scroll
   $(window).scroll(function () {
-    $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
+    $("#myTopnav").addClass("scrolled", $(this).scrollTop() > 50);
   });
+
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className  === "topnav scrolled") {
+      x.className += " responsive";
+      x.className += " scrolled";
+
+    } else {
+      x.className = "topnav";
+    }
+  }
 </script>
