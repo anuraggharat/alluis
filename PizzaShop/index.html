@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200&family=Kumbh+Sans&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <div>
+          <a
+            ><i class="fa fa-phone" aria-hidden="true"></i> 02141-667667 |
+            7745050822</a
+          >
+        </div>
+        <div>
+          <img
+            src="./logo5-removebg-preview.png"
+            alt=""
+            srcset=""
+            height="100px"
+            width="100px"
+          />
+        </div>
+        <div>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Shop</a>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Contact</a
+          >
+          <a href="http://" target="_blank" rel="noopener noreferrer">Offers</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="overlay">
+          <div class="headline">
+            <!-- <img
+              src="./logoa-removebg-preview.png"
+              alt=""
+              srcset=""
+              height="200px"
+              width="200px"
+            /> -->
+            <h1 class="logo">The Pizza Town</h1>
+            <h1>The only place to go for Pizza's in ALIBAG!!</h1>
+            <button>Check Menu</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <div class="col">
+          <h1>About our Story:</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            necessitatibus molestiae cum quisquam quaerat, consequatur iusto
+            fugiat modi, laudantium accusamus aperiam. Illum quis odit delectus
+            tenetur, hic temporibus assumenda ut quod eligendi voluptatum quasi
+            sit placeat ad, culpa nam, incidunt impedit voluptatibus architecto
+            sapiente ipsam. Fugit ut fugiat dignissimos doloribus? Praesentium
+            molestias veniam necessitatibus autem, accusantium sint laboriosam
+            voluptate, ad minus assumenda nostrum doloremque saepe harum
+            dignissimos, maiores libero fugiat placeat esse eos delectus.
+            Laborum veritatis consectetur harum et repellat libero eum quae
+            voluptate ea blanditiis dolore repudiandae, hic reprehenderit
+            similique unde atque temporibus possimus modi, corporis error
+            quisquam fugiat?
+          </p>
+        </div>
+        <div class="col right">
+          <img src="./pizza.png" height="auto" width="75%" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  //navbar scroll
+  $(window).scroll(function () {
+    $("nav").toggleClass("scrolled", $(this).scrollTop() > 300);
+  });
+
+  AOS.init();
+</script>
