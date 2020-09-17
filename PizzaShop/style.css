@@ -19,6 +19,9 @@ nav {
   align-items: center;
   z-index: 10;
 }
+section {
+  min-height: 100vh;
+}
 .logo {
   font-family: cursive;
   font-weight: 800;
@@ -105,7 +108,36 @@ p {
   font-size: 1.3rem;
   color: grey;
 }
-.col > h1 {
+.heading {
   font-size: 2rem;
   color: #eb4d4b;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.row-card {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  width: 20%;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 0px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+.card:hover {
+  background-color: #eb4d4b;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.card > img {
+  width: 40%;
 }
