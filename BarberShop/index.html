@@ -152,7 +152,7 @@
     </div>
     </section>
 
-    <!-- pricing section -->
+    <!-- pricing section
     <section class="price-section" id="contact">
       <div class="container">
         <h1>Plans & Pricing</h1>
@@ -249,7 +249,7 @@
     
       </div>
     
-    </section>
+    </section> -->
 <!-- parallax sextion -->
 <section class="parallax-1">
   <div class="overlay">
@@ -350,7 +350,7 @@
 <script>
   //navbar scroll
   $(window).scroll(function () {
-    $("#myTopnav").addClass("scrolled", $(this).scrollTop() > 50);
+    $("#myTopnav").toggleClass("scrolled", $(this).scrollTop() > 50);
   });
 
   function myFunction() {
