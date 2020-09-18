@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+}
+p {
+  margin: 0px;
+  color: grey;
+}
+section {
+  padding: 0px;
+  width: 100%;
+}
+span {
+  color: #2e86de;
+  text-decoration: underline;
+  font-size: 1.7rem;
+}
+nav {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.scrolled {
+  background-color: white;
+  color: black;
+}
+.scrolled > div > a {
+  color: black;
+}
+nav > div {
+  padding: 0px 20px;
+}
+nav > div > a {
+  margin: 0px 20px;
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+}
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.headline > h1 {
+  font-size: 1.8rem;
+}
+.col-3 {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+button {
+  padding: 10px 30px;
+  font-size: 20px;
+  border: 2px solid #2e86de;
+  color: #fff;
+  background-color: #2e86de;
+  border-radius: 5px;
+}
+.col-7 {
+  height: 100%;
+  width: 70%;
+}
+.icons {
+  margin-top: 20px;
+}
+.icons > a {
+  color: grey;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.container {
+  width: 80%;
+  margin: 0px auto;
+}
+.heading {
+  text-decoration: underline;
+}
+.about {
+  margin-top: 100px;
+}
+.col {
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: left;
+}
+h1 {
+  margin: 0.5rem 0px;
+}
+.intro {
+  font-size: 2rem;
+}
+.portfolio-container {
+  padding: 20px;
+}
+.gallary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.project {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 300px;
+}
+.project > h2 {
+  margin-top: auto;
+  z-index: 2;
+  margin-left: 10px;
+  color: #fff;
+  align-items: center;
+  justify-self: center;
+}
+.fa-chevron-right {
+  margin-left: 50;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.project1 {
+  background-image: url("./pexels-expect-best-323705.jpg");
+}
+.project2 {
+  background-image: url("https://images.pexels.com/photos/2079234/pexels-photo-2079234.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+.project3 {
+  background-image: url("https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+}
+.container-button {
+  margin-top: 40px;
+  align-items: center;
+  text-align: center;
+}
+.container-button > button {
+  color: #2e86de;
+  background-color: #fff;
+  border-radius: 2px solid #2e86de;
+  font-size: 1rem;
+}
