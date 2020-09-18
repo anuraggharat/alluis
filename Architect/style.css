@@ -28,6 +28,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  z-index: 100;
 }
 .scrolled {
   background-color: white;
@@ -65,11 +66,20 @@ nav > div > a {
   padding-left: 20px;
 }
 button {
+  cursor: pointer;
   padding: 10px 30px;
   font-size: 20px;
   border: 2px solid #2e86de;
-  color: #fff;
-  background-color: #2e86de;
+  color: #2e86de;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+button:hover {
+  border: 2px solid #fff;
+  color: #fff !important;
+  background-color: #2e86de !important;
+  margin-top: 20px;
   border-radius: 5px;
 }
 .col-7 {
@@ -88,6 +98,7 @@ button {
 .container {
   width: 80%;
   margin: 0px auto;
+  text-align: center;
 }
 .heading {
   text-decoration: underline;
@@ -169,4 +180,64 @@ h1 {
   background-color: #fff;
   border-radius: 2px solid #2e86de;
   font-size: 1rem;
+}
+.services {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.srow {
+  width: 50%;
+  padding: 20px;
+}
+.overflow {
+  padding: 10px;
+  text-align: left;
+  margin-right: -100px;
+  position: relative;
+  z-index: 5;
+  background-color: #f1f1f1;
+}
+.overflow2 {
+  padding: 10px;
+  text-align: left;
+  margin-left: -100px;
+  position: relative;
+  z-index: 5;
+  background-color: #f1f1f1;
+}
+.srowimage {
+  width: 50%;
+}
+.srowimage > image {
+  width: 100%;
+  height: 100%;
+}
+.contact {
+  height: 300px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #2e86de;
+}
+.contactrow {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  justify-content: space-evenly;
+  color: white;
+}
+.contactrow > div > p {
+  color: white;
+}
+.contactrow > button {
+  color: white;
+  background-color: #2e86de;
+  border: 2px solid white;
+  border-radius: 0px;
+}
+footer {
+  background-color: #222222;
+  padding: 10px;
+  text-align: center;
 }
