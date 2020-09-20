@@ -269,3 +269,34 @@ form > a {
 footer {
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%;
+    text-align: center;
+  }
+  .row-card {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .listing {
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+  }
+  .phonenumber {
+    display: none;
+  }
+  .logo {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font: 1rem;
+  }
+}

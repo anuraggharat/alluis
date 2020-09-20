@@ -241,3 +241,63 @@ footer {
   padding: 10px;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  .row,
+  .contactrow {
+    flex-direction: column;
+  }
+  nav {
+    background-color: #fff;
+    flex-direction: column;
+  }
+  nav > div > a {
+    color: #2e86de;
+  }
+  .col-3 {
+    width: 100%;
+    padding-top: 200px;
+  }
+  .col-7 {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 300px;
+  }
+  .col-7 > img {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .col {
+    padding-top: 100px;
+    width: 100%;
+  }
+  .gallary {
+    flex-direction: column;
+  }
+  .project {
+    width: 100%;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .overflow {
+    width: 100%;
+    margin-right: 0px;
+    position: relative;
+    z-index: 5;
+  }
+  .overflow2 {
+    padding: 10px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .srowimage {
+    width: 100%;
+  }
+  .srow {
+    width: 100%;
+    padding: 20px;
+  }
+}
