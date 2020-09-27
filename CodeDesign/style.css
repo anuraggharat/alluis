@@ -5,7 +5,9 @@
   --primary-white: #fff;
   --container-width: 80%;
 }
-
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "IBM Plex Sans", sans-serif !important;
   padding: 0px;
@@ -13,6 +15,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -23,6 +26,9 @@ h1 {
 }
 p {
   color: #090a0f;
+}
+.text-primary {
+  color: var(--primary-color);
 }
 /* navigation bar */
 nav {
@@ -61,6 +67,11 @@ header > div > a {
   padding: 6px 8px;
   color: #090a0f;
   background: none;
+}
+.nav-toggler:hover {
+  border: 2px solid #090a0f;
+  color: #fff;
+  background: var(--secondary-black);
 }
 .scrolled {
   background-color: var(--primary-color);
@@ -116,6 +127,12 @@ header > div > a {
   margin-left: 10px;
   color: #090a0f;
 }
+.down-button:hover {
+  border: 2px solid var(--primary-black);
+  background-color: #090a0f;
+  transition: 0.5s ease;
+  color: #fff;
+}
 .background {
   background-color: #fed615;
   position: absolute;
@@ -128,7 +145,6 @@ header > div > a {
   z-index: -1;
 }
 .home {
-  height: 100vh;
   position: relative;
 }
 
@@ -183,11 +199,15 @@ header > div > a {
   opacity: 0.7;
   transition: 0.5s;
 }
+.z-high {
+  z-index: 300 !important;
+  color: white;
+  opacity: 1;
+}
 .overlay > div > h3,
 .overlay > div > p {
-  position: relative;
   margin: 2px 6px;
-  z-index: 100 !important;
+  z-index: 200 !important;
   opacity: 1;
   color: #fff;
 }
@@ -255,8 +275,8 @@ footer {
   opacity: 0.9;
 }
 .footer-list {
-  display: flex !important;
-  flex-direction: row !important;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .list {
@@ -321,4 +341,46 @@ h5 {
 .footer-footer > div > a,
 .footer-footer > div > p {
   color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .row,
+  .heading,
+  .showcase,
+  .footer-list,
+  .col-60,
+  .footer-footer {
+    flex-direction: column;
+  }
+  .col-20,
+  .col-30,
+  .col-40,
+  .col-50,
+  .col-60,
+  .col-70,
+  .row,
+  .card,
+  .links,
+  .list {
+    width: 100% !important;
+    margin: 0px;
+    padding: 0px;
+  }
+  .blogsection,
+  .services {
+    padding: 0px;
+    margin: 0px;
+  }
+  .main {
+    width: 90%;
+    margin: auto;
+  }
+  .card {
+    margin: 20px 0px;
+  }
+  .background {
+    display: none;
+  }
+  .hero-image {
+    margin-top: 100px;
+  }
 }
