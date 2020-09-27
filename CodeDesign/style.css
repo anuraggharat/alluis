@@ -1,6 +1,8 @@
 :root {
   --primary-color: #fed615;
   --primary-black: #090a0f;
+  --secondary-black: #161a1e;
+  --primary-white: #fff;
   --container-width: 80%;
 }
 
@@ -49,6 +51,10 @@ header > div > a {
   background: none;
   font-size: 0.7rem;
   text-decoration: none;
+}
+.nav-button:hover {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
 }
 .nav-toggler {
   border: 2px solid #090a0f;
@@ -198,7 +204,7 @@ header > div > a {
 
 /* services */
 .services {
-  margin-top: 100px;
+  margin: 100px;
 }
 .col-30 {
   width: 20%;
@@ -235,7 +241,7 @@ h2 {
 
 /* blog section */
 .blogsection {
-  margin-top: 100px;
+  margin: 100px;
 }
 .col-50 {
   width: 50%;
@@ -261,6 +267,39 @@ footer {
 }
 .list > a {
   color: #cdcecf !important;
+  margin: 8px 0px;
+  font-size: 0.85rem;
+}
+.list > p {
+  margin: 0px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.mt-2 {
+  margin-top: 20px !important;
+}
+.testimonials {
+  background-color: #161a1e;
+  color: white;
+  padding: 60px 0px;
+  margin-bottom: 50px;
+}
+.indicator {
+  height: 3px;
+  width: 50px;
+  margin: 0px 5px;
+  border: 1px solid white;
+}
+.active-indicator {
+  background-color: white;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.white-text {
+  color: #fff;
 }
 h5 {
   color: #fff;
