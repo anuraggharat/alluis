@@ -41,16 +41,16 @@
           </div>
         </header>
       </nav>
-      <div class="hero">
+      <div class="hero" id="home">
         <div class="main">
           <div class="row">
-            <div class="col-40">
+            <div class="col-40" data-aos="slide-right">
               <div>
                 <h1>Achieve all your <br />business goals with</h1>
                 <h1><b>GOOD DESIGN</b></h1>
               </div>
               <div class="para-div">
-                <p>
+                <p class="text-grey">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
                   aliquyam erat.
@@ -69,7 +69,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-60">
+            <div class="col-60" data-aos="slide-left">
               <img
                 src="./hero.svg"
                 class="hero-image"
@@ -96,7 +96,11 @@
 
       <div class="overlay-content">
         <div class="links-col">
-          <a href="http://" class="links-active" rel="noopener noreferrer"
+          <a
+            href="#home"
+            class="links-active"
+            rel="noopener noreferrer"
+            onclick="closeNav()"
             >Home</a
           >
           <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()"
@@ -144,7 +148,7 @@
             class="card"
             data-aos="fade-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="300"
+            data-aos-delay="100"
           >
             <img src="./pic1.png" width="100%" alt="" height="100%" />
             <div class="overlay">
@@ -163,7 +167,7 @@
             class="card"
             data-aos="fade-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="600"
+            data-aos-delay="300"
           >
             <img src="./pic2.png" width="100%" alt="" height="100%" />
             <div class="overlay">
@@ -182,7 +186,7 @@
             class="card"
             data-aos="fade-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="900"
+            data-aos-delay="500"
           >
             <img src="./pic1.png" width="100%" alt="" height="100%" />
             <div class="overlay">
@@ -203,7 +207,7 @@
             class="card"
             data-aos="fade-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="1200"
+            data-aos-delay="700"
           >
             <img src="./pic4.png" width="100%" alt="" height="100%" />
             <div class="overlay">
@@ -222,7 +226,7 @@
             class="card"
             data-aos="fade-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="1500"
+            data-aos-delay="900"
           >
             <img src="./pic5.png" width="100%" alt="" height="100%" />
             <div class="overlay">
@@ -241,7 +245,7 @@
             class="card"
             data-aos="fade-in"
             data-aos-easing="ease-in-back"
-            data-aos-delay="1800"
+            data-aos-delay="1100"
           >
             <img src="./pic6.png" width="100%" alt="" height="100%" />
             <div class="overlay">
@@ -349,7 +353,7 @@
                 <h1>
                   Why Should Start-Ups See UX Designers as a Good Investment?
                 </h1>
-                <p>
+                <p class="text-grey">
                   We have come a long way since our ancient predecessors’ used
                   the barter system as their mode of transactions.
                 </p>
@@ -361,7 +365,7 @@
                 data-aos-delay="600"
               >
                 <h1>5 Things My Mother Taught Me About Ux Design</h1>
-                <p>
+                <p class="text-grey">
                   As a user experience designer, we try to build customised
                   design solutions to cater to the specific requirements of the
                   users.
