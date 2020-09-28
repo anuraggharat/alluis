@@ -30,6 +30,65 @@ p {
 .text-primary {
   color: var(--primary-color);
 }
+
+/* whole page navbar */
+.navbar-overlay {
+  position: fixed;
+  z-index: 1000;
+  top: 0px;
+  padding: 10px 0px;
+  display: none;
+  flex-direction: column;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+.navbar-main {
+  position: relative;
+  width: var(--container-width);
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overlay-content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.links-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.links-active {
+  color: var(--secondary-black);
+  opacity: 1 !important ;
+}
+.bold {
+  font-weight: 800;
+}
+.links-col > a {
+  opacity: 0.3;
+  font-size: 1.5rem;
+  color: var(--secondary-black);
+  margin: 15px 0px;
+}
+.links-col > a:hover {
+  opacity: 1;
+}
+.extras-col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* navigation bar */
 nav {
   display: flex;
@@ -67,6 +126,7 @@ header > div > a {
   padding: 6px 8px;
   color: #090a0f;
   background: none;
+  cursor: pointer;
 }
 .nav-toggler:hover {
   border: 2px solid #090a0f;
@@ -146,6 +206,7 @@ header > div > a {
 }
 .home {
   position: relative;
+  margin-bottom: 100px;
 }
 
 /* projects section */
@@ -223,10 +284,12 @@ header > div > a {
 }
 
 /* services */
-.services {
-  margin: 100px;
+.services,
+.blog {
+  margin: 100px 0px;
 }
 .col-30 {
+  text-align: left;
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -366,7 +429,8 @@ h5 {
     padding: 0px;
   }
   .blogsection,
-  .services {
+  .services,
+  .blog {
     padding: 0px;
     margin: 0px;
   }

@@ -33,7 +33,7 @@
             >
               HIRE US
             </a>
-            <button class="nav-toggler">
+            <button class="nav-toggler" onclick="openNav()">
               <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
           </div>
@@ -62,7 +62,7 @@
                   rel="noopener noreferrer"
                   >SEE OUR WORK</a
                 >
-                <a href="#projects" class="down-button">
+                <a href="#portfolio" class="down-button" id="portfolio">
                   <i class="fa fa-arrow-down" aria-hidden="true"></i>
                 </a>
               </div>
@@ -81,8 +81,57 @@
       </div>
       <div class="background"></div>
     </section>
+    <div class="navbar-overlay" id="myNav">
+      <div class="navbar">
+        <div class="navbar-main">
+          <img src="./logo.svg" alt="" />
 
-    <section class="projects" id="projects">
+          <button class="nav-toggler" onclick="closeNav()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="overlay-content">
+        <div class="links-col">
+          <a href="http://" class="links-active" rel="noopener noreferrer"
+            >Home</a
+          >
+          <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()"
+            >Portfolio</a
+          >
+          <a href="#about" rel="noopener noreferrer" onclick="closeNav()"
+            >About</a
+          >
+          <a
+            href="http://anuraggharat.me"
+            rel="noopener noreferrer"
+            onclick="closeNav()"
+            >Contact</a
+          >
+          <a
+            href="http://anuraggharat.me"
+            rel="noopener noreferrer"
+            onclick="closeNav()"
+            >Careers</a
+          >
+          <a href="#blog" rel="noopener noreferrer" onclick="closeNav()"
+            >Blog</a
+          >
+        </div>
+        <div class="extras-col">
+          <p class="bold">
+            We’re taking on new projects.<br />
+            Let’s discuss yours.
+          </p>
+          <p></p>
+          <p>Talk to a human</p>
+          <p>+91 855 496 5312 <br />info@teamcodesign.com</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="projects">
       <div class="main">
         <div class="heading">
           <h1>Our Projects</h1>
@@ -178,7 +227,7 @@
         </div>
       </div>
     </section>
-    <section class="blogsection">
+    <section class="services" id="services">
       <div class="main">
         <div class="row">
           <div class="col-30">
@@ -189,50 +238,26 @@
               Our team creates beautifully crafted brands that actively engage
               customers and drive business results.
             </h1>
-            <div class="row">
+            <div class="row mt-2">
               <div class="col-50 links">
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link"
+                <a href="http://" rel="noopener noreferrer" class="link"
                   >Research</a
                 >
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link"
+                <a href="http://" rel="noopener noreferrer" class="link"
                   >Brand Strategy</a
                 >
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link"
+                <a href="http://" rel="noopener noreferrer" class="link"
                   >Brand Identity</a
                 >
               </div>
               <div class="col-50 links">
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link"
+                <a href="http://" rel="noopener noreferrer" class="link"
                   >Naming</a
                 >
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link"
+                <a href="http://" rel="noopener noreferrer" class="link"
                   >Web & Digital</a
                 >
-                <a
-                  href="http://"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="link"
+                <a href="http://" rel="noopener noreferrer" class="link"
                   >Content Creation</a
                 >
               </div>
@@ -263,7 +288,7 @@
             </h1>
           </div>
         </div>
-        <div class="row mt-2">
+        <div class="row mt-2" id="blog">
           <div class="col-30"></div>
           <div class="col-70 flex-row">
             <div class="indicator"></div>
@@ -275,11 +300,11 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="blog">
       <div class="main">
         <div class="row">
           <div class="col-30">
-            <h2>What We Do</h2>
+            <h2>From the Blog</h2>
           </div>
           <div class="col-70">
             <div class="row">
@@ -380,5 +405,10 @@
     $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
   });
 
-  AOS.init();
+  function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+  }
+  function openNav() {
+    document.getElementById("myNav").style.display = "flex";
+  }
 </script>
