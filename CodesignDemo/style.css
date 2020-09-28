@@ -414,6 +414,14 @@ h5 {
   .footer-footer {
     flex-direction: column;
   }
+  .sm-center {
+    text-align: center;
+    align-items: center;
+    margin: 20px 0px !important;
+  }
+  .m-s-2 {
+    margin: 20px 0px !important;
+  }
   .col-20,
   .col-30,
   .col-40,
