@@ -10,8 +10,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital@0;1&display=swap"
-      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
   </head>
   <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -40,7 +40,7 @@
         <a href="#home" class="primary-button">Contact</a>
       </div>
     </nav> -->
-    <div class="topnav" id="myTopnav">
+    <!-- <div class="topnav" id="myTopnav">
       <div>
         <img src="./yclogo.png" alt="Jawed Habib Saloon Alibag" width="100px" height="100px" />
 
@@ -52,8 +52,21 @@
       <a href="#contact">Contact</a>
       <a href="#about" onclick="myFunction()">About</a>
       
-    </div>
+    </div> -->
 
+    <header class="header">
+      <a href="" class="logo">
+        <img src="./yclogo.png" alt="Jawed Habib Saloon Alibag" width="100px" height="100px" />
+      </a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
     <!-- hero image -->
     <div class="hero-image">
       <div class="overlay">
@@ -350,7 +363,7 @@
 <script>
   //navbar scroll
   $(window).scroll(function () {
-    $("#myTopnav").toggleClass("scrolled", $(this).scrollTop() > 50);
+    $("header").toggleClass("scrolled", $(this).scrollTop() > 50);
   });
 
   function myFunction() {
