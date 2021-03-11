@@ -27,7 +27,7 @@ body {
   text-align: center;
 }
 .heading {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--text-color);
 }
@@ -74,7 +74,9 @@ p {
   background-color: #111;
   opacity: 0.4;
 }
-
+.mb-5 {
+  margin-bottom: 50px;
+}
 /* styling for home */
 .home {
   width: 100vw;
@@ -294,7 +296,7 @@ input {
   height: 40px;
   width: 100%;
   padding: 5px;
-
+  color: white;
   border-radius: 0px;
   border: 1px solid #fff;
   background: none;
@@ -317,7 +319,7 @@ textarea {
   opacity: 1; /* Firefox */
 }
 .footer {
-  background-color: #b2bec3;
+  background-color: #3b4086;
 }
 footer {
   width: 80%;
@@ -339,4 +341,36 @@ footer > div > div > i {
   background-color: rgb(31, 32, 39);
   padding: 10px 0px;
   color: white;
+}
+
+/* .media-query */
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  .nav-inner > a {
+    font-size: 0.5rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .item-card,
+  input {
+    width: 100%;
+  }
+  input {
+    margin: 10px 0px;
+  }
+  textarea {
+    width: 95%;
+  }
+  form > div {
+    width: 100%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }
