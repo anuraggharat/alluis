@@ -346,9 +346,6 @@ footer > div > div > i {
 /* .media-query */
 
 @media screen and (max-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
   .nav-inner > a {
     font-size: 0.5rem;
   }
