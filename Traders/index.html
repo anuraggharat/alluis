@@ -16,7 +16,7 @@
 <body>
         <nav>
             <div class="logo">
-                <img src="https://www.designevo.com/res/templates/thumb_small/blue-arrow-and-globe.png" alt="" srcset="" class="logo-img">
+                <img src="./logo.png" alt="" srcset="" class="logo-img">
             </div>
             <div class="links">
                 <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
@@ -29,7 +29,17 @@
                         <i class="fa fa-phone" aria-hidden="true"></i>
 <p>+91-7745050822</p>
             </div>
+<div class="menu">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
         </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
     <section class="home" id="home">
         <div class="row">
             <div class="col-6">
@@ -38,7 +48,7 @@
             <div class="col-6">
               <div class="content">
                     <h1 class="heading">CONSTRUCTION & BUILDING</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, voluptas!</p>
+                    <p class="head-text">12 years of successful experience in construction facilities of Industrial and Private use!</p>
                     <button class="button_slide slide_down">Get a Quote !</button>
               </div>
                 
@@ -233,3 +243,12 @@
     </footer>
 </body>
 </html>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
