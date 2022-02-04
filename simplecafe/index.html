@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <nav>
+        <div class="container mx-auto flex-row justify-between">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div>
+                <span onclick="openNav()" class="menu-button"><i class="fas fa-bars fa-lg"></i></span>
+            </div>
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallary">Gallary</a>
+        <a href="#contact">Contact</a>
+    </div>
+    
+    <section class="home" id="home">
+            <div class="home-container">
+                    <h1 class="heading">Welcome to Cafe Cafeteria!</h1>
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="primary-button mt-20 text-white" href="#gallary">View Menu</a>
+            </div>
+    </section>
+    <section class="about">
+        <div class="container mx-auto">
+                    <h1 class="heading mb-25">Welcome to Our Cafe in Alibaug </h1>
+                    <p class="mb-25">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, veniam. Earum laudantium numquam, quas ullam magnam
+                        officiis minima quasi neque voluptatibus. Ratione veritatis eos expedita iusto totam magnam praesentium! Debitis!
+                    </p>
+                    <div class="social-icons mb-25">
+                    <a href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab  fa-2x fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab  fa-2x fa-instagram-square"></i></a>
+                </div>
+                    <img src="./assets/about.jpg" class="about-img" />
+        </div>
+    </section>
+    <section class="menu-section mb-25" id="menu">
+        <div class="container mx-auto text-center">
+            <h1 class="heading mb-25">Explore our Menu</h1>
+            <p class="mb-25">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laborum, tempore excepturi doloremque enim sunt!</p>
+        </div>
+        <div class="row">
+            <div class="img-section img1">
+            </div>
+            <div class="details-section">
+                <h1>Pizza's</h1>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div  class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span  class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div  class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span  class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div  class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span  class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row reverse">
+            <div class="details-section">
+                <h1>Sandwiches</h1>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-section img2">
+            
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-section img3">
+        
+            </div>
+            <div class="details-section">
+                <h1>Breakfast items</h1>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row reverse">
+            <div class="details-section">
+                <h1>Drinks</h1>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-title">
+                                <h4>Chicken Pizza</h4>
+                                <span class="text-primary">₹300/-</span>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-section img4">
+        
+            </div>
+        </div>
+                <div class="row">
+                    <div class="img-section img5">
+                
+                    </div>
+                    <div class="details-section">
+                        <h1>Coffee's</h1>
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <div class="menu-title">
+                                        <h4>Chicken Pizza</h4>
+                                        <span class="text-primary">₹300/-</span>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-title">
+                                        <h4>Chicken Pizza</h4>
+                                        <span class="text-primary">₹300/-</span>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-title">
+                                        <h4>Chicken Pizza</h4>
+                                        <span class="text-primary">₹300/-</span>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-title">
+                                        <h4>Chicken Pizza</h4>
+                                        <span class="text-primary">₹300/-</span>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur!</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section class="gallary mt-25" id="gallary">
+        <div class="container mt-25 mx-auto mb-25 text-center">
+            <h1 class="heading">Gallary</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, nam.</p>
+        </div>
+        <div class="gallary-container ">
+            <img id="myImg" src="./assets/home2.jpg" alt="Snow" onclick="openModal(this)" class="gallary-img">
+            <img id="myImg" src="./assets/about.jpg" alt="Snow" onclick="openModal(this)" class="gallary-img">
+            <img id="myImg" src="./assets/home3.jpg" alt="Snow" onclick="openModal(this)" class="gallary-img">
+            <img id="myImg" src="./assets/home2.jpg" alt="Snow" onclick="openModal(this)" class="gallary-img">
+            <img id="myImg" src="./assets/about.jpg" alt="Snow" onclick="openModal(this)" class="gallary-img">
+            <img id="myImg" src="./assets/home3.jpg" alt="Snow" onclick="openModal(this)" class="gallary-img">
+
+        </div>
+        
+        <!-- The Modal -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <img class="modal-content" id="modalimage">
+        </div>
+    </section>
+    <section class="contact mt-25" id="contact">
+        <div class="container mx-auto text-center mt-25 mb-25">
+            <h1 class="heading ">Find us at:</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ea!</p>
+            <p>+91-7807807809 / +91-7807807809</p>
+            <div class="social-icons mb-25 mt-25">
+                <a href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+                <a href="#"><i class="fab  fa-2x fa-facebook-square"></i></a>
+                <a href="#"><i class="fab  fa-2x fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-2x fa-whatsapp-square"></i></a>
+                <a href="#"><i class="fas fa-2x fa-phone-square-alt"></i></a>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.9450779900017!2d72.88932531489566!3d18.711276887298165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87900565a4d8b%3A0x152e8e7ac02617e2!2sSUJU&#39;S%20Artcafe!5e0!3m2!1sen!2sin!4v1643827682547!5m2!1sen!2sin"
+            width="100%fa-border" height="450" class="mt-25 " style="border:0;margin: 0px;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer class="text-center text-white">
+        <p>
+        Copyright &copy; <a href="https://anuraggharat.github.io" class="text-primary">Anurag</a>
+        </p>
+    </footer>
+</body>
+</html>

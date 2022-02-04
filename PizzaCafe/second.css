@@ -1,0 +1,19 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+}
+#section1{
+    background-color: #798dcf;
+}
+#section2{
+    background-color: #d45252;
+}
+#section3{
+    background-color: #45d481;
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    
+    <header class="shadow">
+            <div id="brand">
+                <a href="/">
+                    <img src="./assets/logo.png" alt="" height="75px">
+                </a>
+            </div>
+            <nav class="">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallary">Gallary</a></li>
+                    <li><a href="#contact">Contact</a></li>
+        
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallary">Gallary</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    </header>
+    <section class="home" id="home">
+        <div class="overlay"></div>
+        <div class="main">
+        <div class="container">
+            <div class="w-50 mt-20">
+                <h1 class="heading">The Best Pizza of the Town!</h1>
+                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia provident exercitationem excepturi aspernatur, nisi
+                    optio repellat! Doloremque magni architecto culpa?</p>
+                <a class="primary-button mt-20">View Menu</a>
+            </div>            
+        </div>
+        </div>
+    </section>
+    <section id="about" class="about primary-padding">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="text-primary m-0 p-0">Pizzeriza Alibag</h1>
+                <h1 class="heading m-0 p-0">Best Pizza's in the Town!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque consequatur culpa quidem ipsam atque adipisci
+                    vitae suscipit dignissimos labore necessitatibus nihil doloremque illum voluptates, cum ipsum accusamus?
+                    Voluptatibus excepturi totam deleniti accusamus quod nostrum! Fugit blanditiis magni dolores est nihil consequatur
+                    excepturi quod voluptas. Ipsam adipisci enim delectus. A!</p>
+            </div>
+            <div class="row mt-20 space-between">
+                <div class="col-4">
+                    <img class="about-img elevate shadow" src="./assets/about1.jpg" alt="" srcset="">
+                </div>
+                <div class="col-4">
+                    <img class="about-img elevate shadow" src="./assets/about5.jpg" alt="" srcset="">
+
+                </div>
+                <div class="col-4">
+                    <img class="about-img elevate shadow" src="./assets/about3.jpg" alt="" srcset="">
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="menu primary-padding">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="text-primary">
+                    Our Menu!
+                </h1>
+                <h1 class="heading">
+                    Pizza's, Fries, Burger's everything that you wish!
+                </h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet obcaecati eum officia! Sit consectetur, ab omnis rem blanditiis pariatur animi.</p>
+            </div>
+            <div class="tab mt-30">
+                <button class="tablinks" onclick="openCity(event, 'Pizza')" id="defaultOpen">
+                    <img src="./assets/pizza.png" alt="" srcset="">
+                    <h4 class="text-dark">Pizza's</h4>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Burger')">
+                    <img src="./assets/burger.png" alt="" srcset="">
+                    <h4>Burger's</h4>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Fries')">
+                    <img src="./assets/fries.png" alt="" srcset="">
+                    <h4>Fries</h4>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Drinks')">
+                    <img src="./assets/drinks.png" alt="" srcset="">
+                    <h4>Drinks</h4></button>
+                <button class="tablinks" onclick="openCity(event, 'Others')">                
+                    <img src="./assets/others.png" alt="" srcset="">
+                    <h4>Others</h4></button>
+
+            </div>
+
+            <div id="Pizza" class="tabcontent">
+                <div class="menu-content">
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/pizza6.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p  class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/pizza5.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Tikka Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/pizza3.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Veg Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/pizza6.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Barbeque Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/pizza6.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Paneer Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div id="Burger" class="tabcontent">
+                <div class="menu-content">
+                    <div class="menu-card mt-20">
+                        <img src="./assets/burger1.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Burger</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/burger2.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Paneer Burger</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/burger3.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Crispy Burger</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/burger2.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Mutton Burger</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="Fries" class="tabcontent">
+                <div class="menu-content">
+                    <div class="menu-card mt-20">
+                        <img src="./assets/fries5.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Masala Fries</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/fries6.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Peri Peri Fries</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/onionrings.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Onion Rings</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/loadedfries.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Loaded Fries</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="Drinks" class="tabcontent">
+                <div class="menu-content">
+                    <div class="menu-card mt-20">
+                        <img src="./assets/oreoshake.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Oreo Milkshake</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/oreoshake.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Oreo Milkshake</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/mojito.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/mojito.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Pizza</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="Others" class="tabcontent">
+                <div class="menu-content">
+                    <div class="menu-card mt-20">
+                        <img src="./assets/chickenwings.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Fried Chicken</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/friedchicken.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Wings</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/momos.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Fried Momos</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/chickenmomos.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Momos</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                    <div class="menu-card  mt-20">
+                        <img src="./assets/salad.png" class="elevate" alt="" srcset="">
+                        <h3 class="m-0 ">Chicken Salad</h3>
+                        <p class="price m-0 ">₹200/-</p>
+                        <p class="m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, error.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="order" class="order bg-secondary">
+        <div class="container primary-padding">
+            <div class="row col-rev">
+                <div class="col-6 d-col justify-center">
+                    <h1 class="heading text-white m-0">We Deliver food at your Door steps! </h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur hic
+                        repellendus obcaecati delectus nostrum itaque.</p>
+                    <p class="text-white">Phone no: 1213124124 / 123124124</p>
+                    <button class="primary-button w-50 mt-20">Call Now!</button>
+                </div>
+                <div class="col-6 ">
+                    <img src="./assets/rotate.png" class="rotate" alt="" srcset="" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallary" class="gallary primary-padding mt-30">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="heading">Gallary</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam numquam officia nisi vitae voluptatem temporibus at, maxime ab adipisci quidem?</p>
+            </div>
+            <div class="grid  mt-30">
+                <div class="gallary-container">
+                    <img class="gallary-img elevate shadow" src="./assets/about1.jpg"  onclick="openModal(this)" />
+                </div>
+                <div class="gallary-container">
+                    <img class="gallary-img elevate shadow" src="./assets/about5.jpg"  onclick="openModal(this)"  />
+                </div>
+                <div class="gallary-container">
+                    <img class="gallary-img elevate shadow" src="./assets/gallary.jpg"  onclick="openModal(this)" />
+                </div>
+                <div class="gallary-container">
+                    <img class="gallary-img elevate shadow" src="./assets/about4.jpg"  onclick="openModal(this)" />
+                </div>
+                <div class="gallary-container">
+                    <img class="gallary-img elevate shadow" src="./assets/shwarma.jpg"  onclick="openModal(this)" />
+                </div>
+            </div>
+        </div>
+            <div class="modal" id="modal" onclick="closeModal()">
+                    <img class="modal-image" id="modalimage" src=""   />
+            </div>
+    </section>
+    <section id="contact" class="contact mt-30 text-center min-vh-100 primary-padding">
+        <h1 class="heading">Want to connect?</h1>
+        <div class="container pt-primary mt-30">
+            <form action="">
+                <input type="email" class="shadow" name="" id="" placeholder="Your Email">
+                <input type="text" class="shadow" name="" id="" placeholder="Your Name">
+                <input type="tel" class="shadow" name="" id="" placeholder="Your Contact Number">
+                <button type="submit" class="shadow primary-button">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="map text-center mt-30 primary-padding">
+        <div class="container p-0">
+            <h1 class="heading">
+                Find us at
+            </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta veniam reiciendis quis, nesciunt ipsum aut porro sapiente nemo ut harum?</p>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15120.477308753729!2d72.86336325!3d18.658640549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87a2f65b1267d%3A0xc7206d8971e66463!2sVarsoli%20Beach!5e0!3m2!1sen!2sin!4v1643365462787!5m2!1sen!2sin"
+            width="100%" height="450" class="p-0 mt-30" style="border: 0px;" allowfullscreen="true" loading="lazy"></iframe>
+    </section>
+
+    <footer class="text-center">
+        <div class="widgets">
+            <div class="contact-number">
+                <a href="tel:+">+91-7745050822 / +91-7021203764</a>
+            </div>
+            <div class="social-media-icons">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-google"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+        Designed and Developed by <a href="http://anuraggharat.github.io" target="_blank" rel="noopener noreferrer">Anurag</a>
+
+        </div>
+    </footer>
+</body>
+</html>
+<script src="./app.js"></script>
