@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallary</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    :root{
+    --primary:#22577A;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+p{
+    color: grey;
+}
+.text-center{
+    text-align: center;
+}
+.mt-30{
+    margin-top: 30px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul>li{
+    margin: .5rem 0%;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: space-between;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #f4f7fc;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.test{
+    background-color: aqua;
+}
+.overlay{
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    opacity: .4;
+    left: 0%;
+}
+
+.primary-button{
+    background: none;
+    border: 1px solid var(--primary);
+    padding: 10px 40px;
+    font-size: 20px;
+    color: var(--primary);
+}
+.primary-button:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 10vh;
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    background-color: transparent;
+}
+.nav-toggle{
+    display: none;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.nav-link>a{
+    margin-left:30px;
+    color: #fff;
+    transition: .75s;
+}
+.nav-link-scrolled>a{
+    margin-left:30px;
+    color: #222;
+    transition: .75s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f4f7fc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.heading{
+    font-size: 3rem;
+}
+.left{
+    padding-left: 10%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left,.right{
+    width: 50%;
+}
+.bg-home{
+    background: url("./assets/home.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+section{
+    padding: 2rem;
+}
+/* about styles */
+.about{
+    padding-top: 100px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.col-6{
+    
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-img{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+img{
+    background-color: #222;
+    cursor: pointer;
+}
+
+/* image gallary */
+
+.column {
+  -ms-flex: 33%; 
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 3px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  margin: 4px 0px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+    .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.menu{
+    border: none;
+    background: none;
+    font-size: 24px;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.col-4{
+    width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  
+    .nav-toggle{
+        display: block;
+    }
+    .nav-link,.nav-link-scrolled{
+        display: none;
+    }
+    .row,.home{
+        flex-direction: column;
+    }
+    .col-6,.col-4{
+        width: 100%;    
+    }
+    .rev{
+        flex-direction: column-reverse;
+    }
+    .left{
+        padding-top: 10px;
+    }
+    .left,.right{
+        width: 100%; 
+        height: 50vh;   
+    }
+
+}
+
+/* modal section */
+.modal{
+    display: none; 
+    height: 100vh;
+    width: 100%;
+    position: fixed; 
+    text-align: center;
+    z-index: 10; 
+    padding: 40px 0px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    overflow: auto; 
+    background-color: #fff;  
+}
+
+.modal-img{  
+    width: 80%;
+    margin: auto;
+    align-self: center;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+.location-map{
+    border:0;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: #b38a4c;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 0px;
+}
+.social-icons>a{
+    font-size: 1.3rem;
+    color: #222;
+    margin:10px;
+}
+</style>
+
+<body>
+    <!-- <nav id="nav">
+        <div class="container ">
+            <div class="navbar ">
+                <div>
+                    <h1 class="">LOGO</h1>
+                </div>
+                <div class="nav-link" id="nav-links">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">About</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Gallary</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>
+                </div>
+                <div class="nav-toggle">
+                    <button class="menu" onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <section id="home" class="home">
+        <div class=" left">
+            <div class="home-text">
+                <div>
+                    <h1 class="heading">Experience Luxury at the Villa!</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, adipisci!</p>
+                </div>
+                <div class="mt-30">
+                    <button class="primary-button">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-home"></div>
+    </section>
+    <section class="about" id="about">
+        <div class="container text-center">
+            <h1 class="heading logo">Luxury Villa Experience amist the Nature!</h1>
+            <p class="mt-30">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ullam iure praesentium
+                totam nemo inventore, dolore eaque voluptatum atque iste sunt maiores voluptates similique labore,
+                perspiciatis ratione tempora sequi earum sed quidem provident mollitia suscipit culpa! Qui animi,
+                maiores, delectus illo asperiores ducimus repellendus fuga, ab tempora corrupti facilis blanditiis
+                maxime est aut reiciendis culpa impedit explicabo? Consectetur, doloribus ducimus? Commodi laboriosam
+                quidem dolor accusamus, quibusdam necessitatibus nemo exercitationem et dignissimos excepturi obcaecati.
+                Commodi aut debitis dolore illo sit, pariatur temporibus consectetur id consequuntur ex, deserunt
+                reiciendis nobis officia dolor assumenda quia dignissimos aliquid accusantium. Aut provident omnis
+                illum? Quaerat.</p>
+            <button class="primary-button mt-30">Book Now</button>
+        </div>
+        <div class="container">
+            <div class="row text-center mt-30">
+                <div class="col-6">
+                    <h3>
+                        Anurag Gharat
+                    </h3>
+                    <p>anuraggharat55@gmail.com</p>
+                    <p>7788665544 / 8877665544</p>
+                </div>
+                <div class="col-6">
+                    <h3>
+                        Anurag Gharat
+                    </h3>
+                    <p>anuraggharat55@gmail.com</p>
+                    <p>7788665544 / 8877665544</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="mt-30">
+        <div class="container">
+
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <ul>
+                        <li>Pool Available</li>
+                        <li>Campfire</li>
+                        <li>Extra Beds</li>
+                        <li>Lawn / Backyard</li>
+
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>Wifi</li>
+                        <li>Breakfast</li>
+                        <li>Taxi Service</li>
+                        <li>Bar</li>
+
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>Rental Bikes</li>
+                        <li>House </li>
+                        <li>Parking</li>
+                        <li>Air Conditioning</li>
+
+                    </ul>
+                </div>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <section class="mt-30">
+        <div class="row mt-30">
+            <div class="column  ">
+                <img src="./assets/gallary1.jpg" >
+                <img src="./assets/gallary2.jpg" >
+                <img src="./assets/gallary3.jpg" >
+                <img src="./assets/gallary4.jpg" >
+
+            </div>
+            <div class="column">
+                <img src="./assets/gallary7.jpg" >
+                <img src="./assets/gallary11.jpg" >
+                <img src="./assets/gallary8.jpg" >
+
+            </div>
+            <div class="column">
+                <img src="./assets/gallary6.jpg" >
+                <img src="./assets/gallary5.jpeg" >
+                <img src="./assets/gallary2.jpg" >
+                <img src="./assets/gallary6.webp" >
+            </div>
+
+        </div>
+        <div id="modal" class="modal" onclick="closeModal(this)">
+            <img class="modal-img" id="modal-img" />
+        </div>
+    </section>
+
+    <!-- <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img class="about-img" src="./assets/image1.jpg" alt="" srcset="" loading="lazy">
+                </div>
+                <div class="col-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia,
+                        voluptates
+                        praesentium sint
+
+                </div>
+            </div>
+            <div class="row rev">
+
+                <div class="col-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia,
+                        voluptates
+                        praesentium sint ratione aperiam blanditiis nihil quas non enim saepe, in amet nesciunt eos
+                        quasi quia
+
+                </div>
+                <div class="col-6">
+                    <img class="about-img" src="./assets/home1.jpg" alt="" srcset="" loading="lazy">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <img class="about-img" src="./assets/home2.jpg" alt="" srcset="" loading="lazy">
+                </div>
+                <div class="col-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia,
+                        voluptates
+                        praesentium sint ratione aperiam blanditiis nihil quas non enim saepe, in amet nesciunt eos
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="map mt-30">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8083.981716956621!2d72.86817873432236!3d18.646131891516607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87a473a1dbd89%3A0xbd02df49e62101be!2sAlibag%20Court!5e0!3m2!1sen!2sin!4v1644775227048!5m2!1sen!2sin"
+            width="100%" height="450" class="location-map" allowfullscreen="" loading="lazy"></iframe>
+    </section> -->
+
+    
+</body>
+
+</html>

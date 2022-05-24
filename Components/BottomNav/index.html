@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    width: 100%;
+    height: 100%;  
+    background-color: #ecf0f1;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 10%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border-radius: 25px;
+    height: 100%;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a{
+    font-size: 1.3rem;
+    color: #222;
+}
+
+@media screen and (max-width:568px) {
+    nav {
+        bottom: 0;
+    }
+    nav ul{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+</style>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bi bi-house"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <i class="bi bi-person"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#services">
+                    <i class="bi bi-code-slash"></i>
+
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <i class="bi bi-pen"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class="bi bi-chat"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>HOME</h1>
+    </section>
+    <section id="about">
+        <h1>ABOUT</h1>
+    </section>
+    <section id="services">
+        <h1>SERVICES</h1>
+    </section>
+    <section id="projects">
+        <h1>PROJECTS</h1>
+    </section>
+    <section id="contact">
+        <h1>CONTACTS</h1>
+    </section>
+</body>
+</html>
+<script>
+//  const sections = document.querySelectorAll('section')
+//  console.log(sections)
+//     console.log(document.querySelector('a[href*="contact"]'));
+
+//     function scrollActive() {
+//         const scrollY = window.pageYOffset
+
+//         sections.forEach(current => {
+//             const sectionHeight = current.offsetHeight,
+//                 sectionTop = current.offsetTop,
+//                 sectionId = current.getAttribute('id')
+            
+//             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//                 document.querySelector("a[href^=" + sectionId + "]").classList.add('active-link')
+//                 console.log(document.querySelector('a[href*=' + sectionId + ']'))
+//             } else {
+//                 document.querySelector("a[href^=" + sectionId + "]").classList.remove('active-link')
+//             }
+//         })
+//     }
+//     window.addEventListener('scroll', scrollActive)
+</script>

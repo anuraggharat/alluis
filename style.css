@@ -1,9 +1,36 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-body {
-  box-sizing: border-box;
+*{
   padding: 0px;
   margin: 0px;
-  font-family: 'Montserrat', sans-serif; }
+  text-decoration: none;
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; 
+}
+a{
+  color: white;
+}
+ .row {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   margin-top: 50px;
+   flex-wrap: wrap;
+ }
+.card {
+   text-align: left;
+   width: 30%;
+   padding: 10px;
+   transition: .3s linear;
+}
+.card img{
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.card  div{
+  padding: .5rem;
+}
   body .home {
     background-image: url("./red-notebook-on-computer-keyboard-beside-red-ceramic-mug-3774054.jpg");
     width: 100%;
@@ -43,25 +70,14 @@ body {
     color: white;
     padding: 20px;
     text-align: center; }
-    body .all-links .row {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      margin-top: 50px; }
+    body .all-links
       body .all-links .row h1 {
         margin: 50px; }
-    body .all-links .card {
-      text-align: left;
-      background: #323232;
-      /* fallback for old browsers */
-      width: 30%;
-      padding: 10px;
-      transition: .3s linear; }
+    body .all-links
       body .all-links .card a {
         color: #4b6cb7;
         text-decoration: none; }
-    body .all-links .card:hover {
-      transform: translate(-3%, -3%); }
+
   body .components {
     background-color: #130f40; }
     body .components .row .card {

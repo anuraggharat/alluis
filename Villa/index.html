@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav" class="z-index-10">
+        <div class="container ">
+            <div class="navbar ">
+                <div>
+                    <h1 class="">LOGO</h1>
+                </div>
+                <div class="nav-link" id="nav-links">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">About</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Gallary</a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>
+                </div>
+                <div class="nav-toggle">
+                    <button class="menu"  onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    </nav>
+    <section id="home" class="min-h-vh row md-reverse">
+        <div class="col-6 right">
+            <div class="home-text " data-aos="fade-up">
+                <div>
+                <h1 class="heading">Experience Luxury at the Villa!</h1>
+                <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, adipisci!</p>
+                </div>
+            <div class="d-flex flex-row mt-3">
+                <a href="http://" class="mt-1 btn btn-primary mr-1 animate" target="_blank" rel="noopener noreferrer">
+                    Book Now
+                </a>
+                <a href="http://" class="mt-1 btn btn-secondary animate" target="_blank" rel="noopener noreferrer">
+                    Know more
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 bg-home"></div>
+    </section>
+        
+    <section class=" py-section " id="about">
+        <div class="container">
+            <div class="container p-1 text-center">
+                <h1 class="heading">About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+            </div>
+            <div class="row">
+                <div class="col-6 p-1"   data-aos="fade-up">
+                    <img  src="./assets/entrance.jpg" loading="lazy" alt="" class="shadow">
+                </div>
+                <div class="col-6 p-1" >
+                    <h1 class="heading logo">Luxury Villa Experience amist the Nature!</h1>
+                    <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis libero iusto sunt labore tenetur fugit at
+                        natus optio deserunt id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias vero pariatur nulla nostrum temporibus dignissimos doloremque et modi harum. </p>
+                    <div class="row mt-1">
+                        <a href="http://" class=" animate btn btn-primary" target="_blank" rel="noopener noreferrer">
+                            Book Now
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parallax parallax-one">
+        <div class="overlay"></div>
+        <div class="z-index-5">
+            <h1  class="text-white heading">RELIVE | RESET | RELAX</h1>
+        </div>
+    </section>
+    <section class="py-section" id="facilities">
+        <div class="container">
+            <div class="container p-1 text-center">
+                <h1 class="heading">Amenities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+            </div>
+            <div class="row">
+                <div class="col-3 p-1 ">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/chef.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                     <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1 ">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/barbeque.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/vacations.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/beer.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/bicycle.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/stationary-bike.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/swimming-pool.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>
+                <div class="col-3 p-1">
+                    <div class="icon-container shadow"   data-aos="fade-up">
+                        <img src="./assets/wifi.png" alt="" loading="lazy" class="" srcset="">
+                    </div>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, perferendis!</p>
+                </div>        
+            </div>
+        </div>
+    </section>
+    <section class="py-section " id="gallary">
+            <div class="container p-1 text-center">
+                <h1 class="heading">Gallary</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+            </div>
+            <div class="row mt-30">
+                <div class="column  ">
+                    <img src="./assets/gallary2.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary3.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary4.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary1.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                </div>
+                <div class="column">
+                    <img src="./assets/gallary7.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary11.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary8.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+
+                    </div>
+                <div class="column">
+                    <img src="./assets/gallary6.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary5.jpeg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary2.jpg" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                    <img src="./assets/gallary6.webp" loading="lazy" onclick="openModal(this)" style="width:100%" class="shadow" loading="lazy">
+                </div>
+              
+            </div>
+            <div id="modal" class="modal" onclick="closeModal(this)">
+                <img class="modal-img" id="modal-img" />
+            </div>
+    </section>
+    <section class="parallax parallax-two">
+        <div class="overlay"></div>
+        <div class="z-index-5">
+            <h1 class="text-white heading">RELIVE | RESET | RELAX</h1>
+        </div>
+    </section>
+    <section class="py-section" id="features">
+        
+        <div class="container">
+            <div class="container p-1 text-center">
+                <h1 class="heading">Facilities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+            </div>
+            <div class="row">
+                <div class="col-6 p-1"   data-aos="fade-right">
+                    <img class="animate"  loading="lazy" src="./assets/wedding.jpg" alt="" srcset="" loading="lazy" >
+                </div>
+                <div class="col-6 p-1">
+                    <h1 class="sub-heading">Lorem Epsum</h1>
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia,
+                        voluptates
+                        praesentium sint ratione aperiam blanditiis nihil quas non enim saepe, in amet nesciunt eos
+                        quasi quia
+                    </p>
+                                    <div class="row mt-1">
+                                        <a href="http://" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                                            Learn more >>
+                                        </a>
+                                    </div>
+                </div>
+            </div>
+            <div class="row rev">
+                
+                <div class="col-6 p-1">
+                    <h1 class="sub-heading">Lorem Epsum</h1>
+
+                    <p class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia,
+                        voluptates
+                        praesentium sint ratione aperiam blanditiis nihil quas non enim saepe, in amet nesciunt eos
+                        quasi quia
+                     </p>   
+                    <div class="row mt-1">
+                        <a href="http://" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Learn more >>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 p-1"   data-aos="fade-left">
+                    <img class="animate"  loading="lazy" src="./assets/waterfall.jpg" alt="" srcset="" loading="lazy" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 p-1"   data-aos="fade-right">
+                    <img class="animate"  loading="lazy" src="./assets/beach.jpg" alt="" srcset="" loading="lazy" >
+                </div>
+                <div class="col-6 p-1">
+                    <h1 class="sub-heading">Lorem Epsum</h1>
+                    <p  class="mt-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia,
+                        voluptates
+                        praesentium sint ratione aperiam blanditiis nihil quas non enim saepe, in amet nesciunt eos
+                    </p>
+                    <div class="row mt-1">
+                        <a href="http://" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Learn more >>
+                        </a>
+                    </div>     
+                    </div>  
+            </div>
+        </div>
+
+    </section>
+    <section class="parallax parallax-two">
+        <div class="overlay"></div>
+        <div class="z-index-5">
+            <h1 class="text-white heading">RELIVE | RESET | RELAX</h1>
+        </div>
+    </section>
+    <section class=" py-section" id="nearby">
+        <div class="container">
+            <div class="container p-1 text-center">
+                <h1 class="heading">Explore whats nearby</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+            </div>
+            <div class="row ">
+                <div class="col-4 mb-1"    data-aos="fade-up">
+                    <img src="./assets/oldfort.jpg" class="animate shadow"  alt="" width="90%">
+                    <h3>Fort nearby</h3>
+                    <p class="small-text text-muted">5Km away</p>
+                    
+                </div>
+                <div class="col-4 mb-1"    data-aos="fade-up">
+                    <img src="./assets/nearby3.jpg" class="animate shadow"  alt="" width="90%"   >
+                    <h3>Beach nearby</h3>
+                    <p class="small-text text-muted">2Km away</p>
+
+                </div>
+                <div class="col-4 mb-1"    data-aos="fade-up">
+                    <img src="./assets/goa.jpg" class="animate shadow"  alt="" width="90%"  >
+                    <h3>Beach nearby</h3>
+                    <p class="small-text text-muted">6Km away</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map py-section" id="map">
+            <div class="container p-1 text-center">
+                <h1 class="heading">Find us at:</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quae?</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8083.981716956621!2d72.86817873432236!3d18.646131891516607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87a473a1dbd89%3A0xbd02df49e62101be!2sAlibag%20Court!5e0!3m2!1sen!2sin!4v1644775227048!5m2!1sen!2sin"
+                width="100%" height="450" class="location-map" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer>
+        <h2 class="logo">The Villa</h2>
+        <p>Villa no 1001, Main Road, Near Collector Office, Alibag 202021, Maharashtra.</p>
+        <p class="mt-1">+91-123445123 | +91-1241341324</p>
+        <p class="mt-1">someemail@gmail.com</p>
+
+        <div class=" social-icons mt-30">
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-google"></i>
+            </a>
+        </div>
+        <div class="mt-30">
+            <p>Designed and Developed by Anurag</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
