@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                        <div class="logo">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div>
+                            <button class="menu" onclick="openNav()">
+                            
+                            <i class="fa-solid fa-bars"></i></button>
+                        </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="nav-links" id="nav-links">Home</a>
+
+        <a href="#" class="nav-links" id="nav-links" >About</a>
+        <a href="#"  class="nav-links"  id="nav-links" >Services</a>
+        <a href="#"  class="nav-links" id="nav-links"  >Clients</a>
+        <a href="#" class="nav-links"  id="nav-links"  >Contact</a>
+    </div>
+    <section id="home" class="home">
+        <div class="overlay"></div>
+        <div class="home-callout">
+            <h1>Welcome to XYZ Cottege</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus, recusandae.</p>
+            <div>
+                <a href="" class="btn-primary">Book Now</a>
+                <a href="" class="btn-primary">Check Rooms</a>
+            </div>
+
+        </div>
+    </section>
+    <section class="about" id="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img class="about-img" src="https://www.mangoalibaug.com/Images/MBH.jpg" alt="" srcset=""  loading="lazy">
+                </div>
+                <div class="col-6">
+                    <p class="mb-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt libero harum ea mollitia, voluptates
+                        praesentium sint ratione aperiam blanditiis nihil quas non enim saepe, in amet nesciunt eos quasi quia
+                        delectus optio? Aliquid nisi illo earum consequuntur molestiae? Expedita, eligendi eaque tempora consectetur
+                        iste excepturi fuga quod nisi. Tempore quam excepturi provident, animi dolorum veniam, esse maiores ducimus
+                        perspiciatis corporis delectus numquam similique quos alias sint dolores repellat?</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8083.981716956621!2d72.86817873432236!3d18.646131891516607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be87a473a1dbd89%3A0xbd02df49e62101be!2sAlibag%20Court!5e0!3m2!1sen!2sin!4v1644775227048!5m2!1sen!2sin"
+                width="100%" height="450" class="location-map" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="room">
+                    <img src="./assets/room5.jpg" alt=""  loading="lazy">
+
+                    <div class="overlay">
+                    </div>
+                    <p>Private Villa</p>
+                </div>
+                <div class="room">
+                    <img src="./assets/room2.jpg" alt=""  loading="lazy">
+                    <div class="overlay">
+                    </div>
+                        <p>Beach Suit</p>
+                </div>
+                <div class="room">
+                    <img src="./assets/room3.jpeg" alt=""  loading="lazy">
+                        <div class="overlay">
+                        </div>
+                        <p>Grand Villa</p>
+                </div>
+                <div class="room">
+                    <img src="./assets/room6.jpg" alt=""  loading="lazy">
+                <div class="overlay">
+                </div>
+                <p>Pool Villa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

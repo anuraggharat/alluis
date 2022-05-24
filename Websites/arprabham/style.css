@@ -1,0 +1,246 @@
+:root{
+    --primary:#b38a4c;
+    --white:#fff;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.text-center{
+    text-align: center;
+}
+.mt-30{
+    margin-top: 30px;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul>li{
+    margin: .5rem 0%;
+}
+.align-center{
+    align-items: center;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #f4f7fc;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.test{
+    background-color: aqua;
+}
+.overlay{
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    opacity: .4;
+    left: 0%;
+}
+
+.primary-button{
+    background: none;
+    border: 1px solid var(--white);
+    padding: 10px 40px;
+    font-size: 20px;
+    color: var(--white);
+}
+.primary-button:hover{
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+
+    color: #fff;
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 10vh;
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    background-color: transparent;
+}
+.nav-toggle{
+    display: none;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.nav-link>a{
+    margin-left:30px;
+    color: #fff;
+    transition: .75s;
+}
+.nav-link-scrolled>a{
+    margin-left:30px;
+    color: #222;
+    transition: .75s;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f4f7fc;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background:#111 url('https://media-cdn.tripadvisor.com/media/photo-m/1280/1c/e3/e9/31/baale-resort-goa.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.home-text>p{
+    color: #fff;
+}
+.home-text{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading{
+    font-size: 4rem;
+}
+
+
+/* about styles */
+.about{
+    padding-top: 100px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+    .nav-toggle{
+        display: block;
+    }
+    .nav-link,.nav-link-scrolled{
+        display: none;
+    }
+    .row,.home{
+        flex-direction: column;
+    }
+    .col-6,.col-4{
+        width: 100%;    
+    }
+    .rev{
+        flex-direction: column-reverse;
+    }
+    .left{
+        padding-top: 10px;
+    }
+    .left,.right{
+        width: 100%; 
+        height: 50vh;   
+    }
+    .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.location-map{
+    border:0;
+    margin: 0%;
+    padding: 0%;
+}
+
+.logo{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: #b38a4c;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 0px;
+}
+.social-icons>a{
+    font-size: 1.3rem;
+    color: #222;
+    margin:10px;
+}
