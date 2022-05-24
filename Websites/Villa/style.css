@@ -266,7 +266,6 @@ nav{
   background-color: #f4f7fc;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
 }
 
 .sidenav a {
@@ -282,12 +281,15 @@ nav{
   color: #111;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.sidenav > .sidebar-header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -302,7 +304,7 @@ nav{
     padding-right: 5%;
 }
 .bg-home{
-    background: url("./assets/gallary6.webp") no-repeat fixed center;
+    background: url("./assets/gallary7.jpg") no-repeat fixed center;
     background-size: cover;
 }
 .icon-container{
