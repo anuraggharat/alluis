@@ -29,10 +29,12 @@
                     <h1 class="">LOGO</h1>
                 </div>
                 <div class="nav-link" id="nav-links">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">About</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Gallary</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>
+                    <a href="#" rel="noopener noreferrer">Home</a>
+                    <a href="#about" rel="noopener noreferrer">About</a>
+                    <a href="#amenities" rel="noopener noreferrer">Amenities</a>
+                    <a href="#gallary" rel="noopener noreferrer">Gallary</a>
+                    <a href="#features" rel="noopener noreferrer">Features</a>
+
                 </div>
                 <div class="nav-toggle">
                     <button class="menu"  onclick="openNav()">
@@ -44,17 +46,19 @@
     <div id="mySidenav" class="sidenav">
         <div class="sidebar-header">
             <div class="nav-toggle">
-<button class="menu" onclick="closeNav()">
-    <i class="fa-solid fa-xmark"></i>
-</button>
+                <button class="menu" onclick="closeNav()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
         </div>
         <div class="sidebar-links">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="#" rel="noopener noreferrer" onclick="closeNav()">Home</a>
+            <a href="#about" rel="noopener noreferrer" onclick="closeNav()">About</a>
+            <a href="#amenities" rel="noopener noreferrer" onclick="closeNav()">Amenities</a>
+            <a href="#gallary" rel="noopener noreferrer" onclick="closeNav()">Gallary</a>
+            <a href="#features" rel="noopener noreferrer" onclick="closeNav()">Features</a>
         </div>
+        
     </div>
     </nav>
     <section id="home" class="min-h-vh row md-reverse">
@@ -107,7 +111,7 @@
             <h1  class="text-white heading">RELIVE | RESET | RELAX</h1>
         </div>
     </section>
-    <section class="py-section" id="facilities">
+    <section class="py-section" id="amenities">
         <div class="container">
             <div class="container p-1 text-center">
                 <h1 class="heading">Amenities</h1>

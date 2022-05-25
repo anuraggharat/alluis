@@ -10,13 +10,13 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 body{
     width: 100%;
     height: 100%;
     background: var(--background);
     font-family: 'Noto Sans', sans-serif;
-    scroll-behavior: smooth;
 }
 /* height and width utility classes */
 .min-h-vh{
@@ -262,8 +262,10 @@ nav{
   position: fixed;
   z-index: 1;
   top: 0;
+  display: flex;
+  flex-direction: column;
   right: 0;
-  background-color: #f4f7fc;
+  background-color: var(--background);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -272,7 +274,7 @@ nav{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #222;
+  color: var(--primary);
   display: block;
   transition: 0.3s;
 }
@@ -281,6 +283,7 @@ nav{
   color: #111;
 }
 
+
 .sidenav > .sidebar-header{
     width: 100%;
     height: 10vh;
@@ -288,7 +291,7 @@ nav{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10%;
+    padding-right: 20%;
 
 }
 
