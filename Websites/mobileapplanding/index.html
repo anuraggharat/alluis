@@ -16,11 +16,11 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav id="nav" class="flex-row">
-            <div>
+    <nav id="nav" >
+            <div class="">
                 <h1 class="logo">LOGO</h1>
             </div>
-            <div>
+            <div class="nav-links">
                 <ul class="flex-row">
                     <li>
                         <a href="http://" target="_blank" rel="noopener noreferrer">Home</a>
@@ -39,27 +39,32 @@
                     </li>
                 </ul>
             </div>
+            <div class="menu-toggler ">
+                <button class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
     </nav> 
     <section class="home" id="home">
         <div class="container">
-            <div class="flex-row h-vh">
+            <div class="flex-row h-vh reverse">
                 <div class="col-6 middle">
                     <h1 class="heading">The Perfect  Landing Page for your App.</h1>
                     <p class="mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat a incidunt iusto placeat saepe ea nihil laboriosam dolorum mollitia. Autem.</p>
-                    <div class="flex-row justify-start w-100 mt-2">
+                    <div class="home-buttons justify-start w-100 mt-2">
                         <a href="" target="_blank" class="btn btn-primary mr-2" rel="noopener noreferrer">Get Started</a>
                         <a href="" target="_blank" class="btn btn-secondary" rel="noopener noreferrer">Discover More</a>
                     </div>
                 </div>
                 <div class="col-6 middle">
-                    <img src="./assets/home.png" width="90%" alt="" sizes="" srcset="" class="mt-2">
+                    <img src="./assets/home.png" width="100%" alt="" sizes="" srcset="" class="mt-2 home-image">
                 </div>
 
             </div>
         </div>
     </section>
     <div class="container my-5">
-            <div class="flex-row  ">
+            <div class="flex-row ">
                 <div class="col-4 py-2">
                     <img src="./assets/icon1.png" alt="" sizes="" srcset="">
                     <h2>Feature1</h2>

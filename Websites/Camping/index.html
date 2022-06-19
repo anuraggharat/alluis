@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="nav" class="z-index-10">
+        <div class="container">
+            <div class="navbar ">
+                <div>
+                    <h1 class="">LOGO</h1>
+                </div>
+                <div class="nav-link" id="nav-links">
+                    <a href="#" rel="noopener noreferrer">Home</a>
+                    <a href="#about" rel="noopener noreferrer">About</a>
+                    <a href="#amenities" rel="noopener noreferrer">Amenities</a>
+                    <a href="#gallary" rel="noopener noreferrer">Gallary</a>
+                    <a href="#features" rel="noopener noreferrer">Features</a>
+
+                </div>
+                <div class="nav-toggle">
+                    <button class="menu" onclick="openNav()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="sidebar-header">
+                <div class="nav-toggle">
+                    <button class="menu" onclick="closeNav()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar-links">
+                <a href="#" rel="noopener noreferrer" onclick="closeNav()">Home</a>
+                <a href="#about" rel="noopener noreferrer" onclick="closeNav()">About</a>
+                <a href="#amenities" rel="noopener noreferrer" onclick="closeNav()">Amenities</a>
+                <a href="#gallary" rel="noopener noreferrer" onclick="closeNav()">Gallary</a>
+                <a href="#features" rel="noopener noreferrer" onclick="closeNav()">Features</a>
+            </div>
+
+        </div>
+    </nav>
+    <section id="home" class="bg-home min-h-vh ">
+        <div class="overlay"></div>
+            <div class="home-text z-index-5" data-aos="fade-up">
+                <div>
+                    <h1 class="text-4xl text-white">Explore camping in the Nature!</h1>
+                    <p class="mt-1  text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, adipisci!</p>
+                </div>
+                <div class="d-flex flex-row mt-3 z-index-10">
+                    <a href="http://" class="mt-1 btn btn-primary mr-1 animate" target="_blank"
+                        rel="noopener noreferrer">
+                        Book Now
+                    </a>
+                    <a href="http://" class="mt-1 btn btn-primary animate" target="_blank" rel="noopener noreferrer">
+                        Know more
+                    </a>
+                </div>
+            </div>
+        
+    </section>
+    <section class="min-h-vh mt-3" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./about.jpg" width="100%" alt="">
+                </div>
+                <div class="col-6 p-1">
+                    <h1 class="text-2xl">Lorem ipsum dolor sit amet.</h1>
+                    <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo maxime maiores adipisci ex dolores nihil assumenda sed officiis labore!</p>
+                    <p class="mt-1">Locations:</p>
+                    <a href="" class="mt-1">Alibag</a>
+                    <a href="">Karjat</a>
+                    <a href="">Lonavala</a>
+                    <a href="">Rishikesh</a>
+                    <button class="btn btn-primary">Call to Action</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="parallax-one parallax">
+        <div class="overlay">
+        </div>
+        <div class="z-index-10">
+            <h1 class="text-white text-4xl">LOREM EPSUM TEXT</h1>
+        </div>
+    </section>
+    <section></section>
+</body>
+
+</html>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>

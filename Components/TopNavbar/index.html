@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+        
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+    font-family: 'Noto Sans', sans-serif;
+
+}
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+   
+}
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+}
+nav div{
+    padding: 0 2rem;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+ul li a{
+    margin-left:2rem;
+}
+
+.top-navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    margin-top: -50vh;
+    transition: .5s all ease-in;
+}
+div{
+    text-align: center;
+}
+.menu{
+    display: none;
+}
+button{
+    padding:.7rem;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+.close-btn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+@media screen and (max-width: 600px) {
+    .nav-links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+</style>
+<body>
+    <section>
+        <nav>
+            <div>
+                <h1>LOGO</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">About</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Services</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu">
+                <button onclick="openNavbar()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <div class="top-navbar" id="navbar">
+                                    <div class="close-btn">
+                                        <button onclick="closeNavbar()">
+                                            <i class="fa-solid fa-close"></i>
+                                        </button>
+                                    </div>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Home</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">About</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Services</a>
+                </ul>
+            </div>
+        </nav>
+    </section>
+</body>
+
+</html>
+<script>
+
+    function openNavbar(){
+        document.getElementById('navbar').style.marginTop=0;  }
+    function closeNavbar() {
+        document.getElementById('navbar').style.marginTop = "-50vh"; }
+
+</script>
