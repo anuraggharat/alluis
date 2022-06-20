@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    section{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-padding: 10px 10px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding-left: 10px;
+    }
+    .row::-webkit-scrollbar{
+        display: none;
+    }
+    .card{
+        scroll-snap-align:  start;
+        margin-right: 1rem;
+    }
+    img{
+        width: 300px;
+        background-color: #F9F9F9;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+    .card-body{
+        padding: 0.5rem 1rem;
+    }
+    p{
+        color: #666;
+        margin:.4rem 0;
+    }
+    
+</style>
+<body>
+    <section>
+        <div class="row">
+            <div class="card">
+                <img  src="https://static.nike.com/a/images/t_default/f3e69325-b434-49ba-a827-42ddb57590d7/air-jordan-1-mid-shoes-BpARGV.png" alt="">
+                <div class="card-body">
+                    <h3>Air Jordan 1</h3>
+                    <p>Men's Shoes</p>
+                    <h3>$180</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/752efdf6-b2b7-47fc-b137-5a70b5dd9423/air-force-1-07-shoe-tnM0q0.png"
+                    alt="">
+                <div class="card-body">
+                    <h3>Air Force 1</h3>
+                    <p>Men's Shoes</p>
+                    <h3>$180</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/338fa63c-1898-4bce-beb9-4c80c92ea2cf/air-force-1-07-lx-shoes-xMp6zh.png"
+                    alt="">
+                <div class="card-body">
+                    <h3>Air Force 1 07 LX</h3>
+                    <p>Men's Shoes</p>
+                    <h3>$200</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3cc67bbc-9d4f-47b0-8268-fcbe34df4c41/air-jordan-1-mid-shoes-BpARGV.png"
+                    alt="">
+                <div class="card-body">
+                    <h3>Air Jordan 1 Mid</h3>
+                    <p>Men's Shoes</p>
+                    <h3>$280</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/5a6268d6f6576eda51a12d68/1613060183642-DKJBEORLQMNBQQBNFSJ0/XXXX+-+DJ2994-100+-+101-8.png"
+                    alt="">
+                <div class="card-body">
+                    <h3>Air Jordan 1 University Blue</h3>
+                    <p>Men's Shoes</p>
+                    <h3>$380</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/534ef08c-d236-48f7-8a0d-6dc80769975b/air-jordan-1-mid-shoe-86f1ZW.png"
+                    alt="">
+                <div class="card-body">
+                    <h3>Air Jordan 1 Mid</h3>
+                    <p>Women's Shoes</p>
+                    <h3>$380</h3>
+                </div>
+            </div>
+            <div>
+        </div>
+    </section>
+</body>
+</html>
