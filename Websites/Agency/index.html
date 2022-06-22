@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -29,9 +31,9 @@
                 <div class="nav-link " id="nav-links">
                     <a href="#" rel="noopener noreferrer" class="mr-2">Home</a>
                     <a href="#about" rel="noopener noreferrer"  class="mr-2">About</a>
-                    <a href="#amenities" rel="noopener noreferrer"  class="mr-2">Amenities</a>
-                    <a href="#gallary" rel="noopener noreferrer"  class="mr-2">Gallary</a>
-                    <a href="#features" rel="noopener noreferrer"  class="mr-2">Features</a>
+                    <a href="#portfolio" rel="noopener noreferrer"  class="mr-2">Portfolio</a>
+                    <a href="#services" rel="noopener noreferrer"  class="mr-2">Services</a>
+                    <a href="#contact" rel="noopener noreferrer"  class="mr-2">Contact</a>
                     <i class="ri-toggle-line text-2xl"></i>    
                 </div>
                 <div class="navbar-toggle">
@@ -45,18 +47,18 @@
             </div>
         </div>
         <div id="topnav" class="topnav shadow">            
-            <a href="#" rel="noopener noreferrer" onclick="closeNav()">Home</a>
+            <a href="#home" rel="noopener noreferrer" onclick="closeNav()">Home</a>
             <a href="#about" rel="noopener noreferrer" onclick="closeNav()">About</a>
-            <a href="#amenities" rel="noopener noreferrer" onclick="closeNav()">Amenities</a>
-            <a href="#gallary" rel="noopener noreferrer" onclick="closeNav()">Gallary</a>
-            <a href="#features" rel="noopener noreferrer" onclick="closeNav()">Features</a>
+            <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()">Services</a>
+            <a href="#services" rel="noopener noreferrer" onclick="closeNav()">Portfolio</a>
+            <a href="#contact" rel="noopener noreferrer" onclick="closeNav()">Contact</a>
             <i class="ri-toggle-line text-2xl"></i>
         </div>
     </nav>
     <section id="home" class="home min-h-vh" >
         <div class="container min-h-vh">
-            <div class="row h-100 md-reverse  min-h-vh">
-                            <div class="col-6">
+            <div class="row h-100 min-h-vh">
+                            <div class="col-6 md-flex-bottom"  data-aos="fade-up">
                                 <h1 class="text-3xl">Your partner to launch your Product online!</h1>
                                 <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Laboriosam laborum animi ipsam iure ullam!</p>
@@ -66,39 +68,268 @@
 
                                 </div>
                             </div>
-                            <div class="col-6 mt-3 md-bottom">
-                                <img src="./assets/Ecommerce campaign-pana.svg" width="100%" alt="">
+                            <div class="col-6 " data-aos="fade-up">
+                                <img src="./assets/home.svg" width="100%" alt="">
                             </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="about">
         <div class="container">
             <div class="row">
-                <h1>Featured Projects</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum ratione veritatis tempore aspernatur
-                    aliquid eos, ullam voluptatem dolore error.</p>
+                <div class="col-6 mt-2 mb-2">
+                        <h1 class="text-2xl mb-1">About Us</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at neque, ea ab aut assumenda quam asperiores
+                            itaque earum expedita.</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-4">
-                    <div class="card w-80 ">
-                        <img src="./assets/project1.png" width="100%" alt="">
-                        <div class="mt-1">
-                            <h1>Health Tracker</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad velit obcaecati rerum accusantium quae deserunt possimus magnam est placeat itaque.</p>
-                        </div>
-                        <button class="btn mt-1 btn-secondary">
-                            Learn more
-                        </button>
-                    </div>
-                    
+                <div class="col-4 p-1"  data-aos="fade-up">
+                    <img src="./assets/5.svg" />
+                    <h3>Content Writing</h3>
+                    <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, corporis!</p>
+                </div>
+                <div class="col-4 p-1"  data-aos="fade-up" data-aos-delay="300">
+                    <img src="./assets/4.svg" />
+                    <h3>Digital Marketting</h3>
+                    <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, corporis!</p>
+                </div>
+                <div class="col-4 p-1"  data-aos="fade-up" data-aos-delay="600">
+                    <img src="./assets/2.svg" />
+                    <h3>Brand Development</h3>
+                    <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, corporis!</p>
+    
                 </div>
             </div>
         </div>
     </section>
-        
-   
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mt-2 mb-2">
+                    <h1 class="text-2xl mb-1">Featured  projects</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at neque, ea ab aut assumenda quam asperiores
+                        itaque earum expedita.</p>
+                </div>
+            </div>
+            <div class="row pb-3 pt-3">
+                <div class="col-4 mb-2" data-aos="fade-up">
+                    <div class="card bg-white w-90 animate">
+                        <img src="https://cdn.dribbble.com/users/1997192/screenshots/16755810/media/395cf407885655737d32924609f674a5.png?compress=1&resize=400x300&vertical=top" width="100%" alt="">
+                        <div class="p-small pt-1 pb-1">
+                            <h3>Design Firm</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem?</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-4 mb-2"  data-aos="fade-up">
+                    <div class="card w-90  bg-white animate">
+                        <img src="https://cdn.dribbble.com/users/1997192/screenshots/17401447/media/2e681d50ac0e1869b6da3ec49882d4c8.png?compress=1&resize=400x300" width="100%" alt="">
+                        <div class="p-small pt-1 pb-1">
+                            <h3>Architecture Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem?</p>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col-4 mb-2"  data-aos="fade-up">
+                    <div class="card w-90  bg-white animate">
+                        <img src="https://cdn.dribbble.com/users/1997192/screenshots/17519500/media/7af50ecd96f93b76289f2e5f6f3d4767.png?compress=1&resize=400x300&vertical=top" width="100%" alt="">
+                        <div class="p-small pt-1 pb-1">
+                            <h3>Construction Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem?</p>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col-4 mb-2"  data-aos="fade-up">
+                    <div class="card bg-white w-90 animate">
+                        <img src="https://cdn.dribbble.com/users/10399584/screenshots/17660320/media/d6cf5a10ac390bc0bdcd5d9e7eb4b5e7.jpg?compress=1&resize=450x338&vertical=top"
+                            width="100%" alt="">
+                        <div class="p-small pt-1 pb-1">
+                            <h3>Restaurant Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem?</p>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col-4 mb-2"  data-aos="fade-up">
+                    <div class="card w-90  bg-white animate">
+                        <img src="https://cdn.dribbble.com/users/5751074/screenshots/18101700/media/af555dd737c807d6845892ae2349c787.png?compress=1&resize=400x300&vertical=top"
+                            width="100%" alt="">
+                        <div class="p-small pt-1 pb-1">
+                            <h3>Finance Dashboard</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem?</p>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="col-4 mb-2"  data-aos="fade-up">
+                    <div class="card w-90  bg-white animate">
+                        <img src="https://i.pinimg.com/originals/67/22/46/6722469cc94883495665e38803d96f7c.jpg" width="100%" alt="">
+                        <div class="p-small pt-1 pb-1">
+                            <h3>Architect Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, rem?</p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 mt-2 mb-2">
+                    <h1 class="text-2xl mb-1">Services</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at neque, ea ab aut assumenda quam asperiores
+                        itaque earum expedita.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 p-1"  data-aos="fade-up">
+                    <img src="./assets/1.svg" alt="" sizes="" srcset="">
+                </div>
+                <div class="col-6 p-1"  data-aos="fade-down">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia rem dolorem animi eveniet consequatur? Velit harum libero commodi voluptatibus magnam!</p>
+                    <div class="mt-2">
+                        <a class="btn btn-secondary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row md-reverse">
+                <div class="col-6 p-1"  data-aos="fade-down">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia rem dolorem animi eveniet consequatur?
+                        Velit harum libero commodi voluptatibus magnam!</p>
+                    <div class="mt-2">
+                        <a class="btn btn-secondary">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-6 p-1"  data-aos="fade-up">
+                    <img src="./assets/4.svg" alt="" sizes="" srcset="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 p-1"  data-aos="fade-up">
+                    <img src="./assets/3.svg" alt="" sizes="" srcset="">
+                </div>
+                <div class="col-6 p-1"  data-aos="fade-down">
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <p class="mt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia rem dolorem animi eveniet consequatur?
+                        Velit harum libero commodi voluptatibus magnam!</p>
+                    <div class="mt-2">
+                        <a class="btn btn-secondary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class=" pt-3 pb-3">
+        <div class="container bg-pastel pt-1 pb-3">
+            <div class="w-80 text-center mx-auto">
+                <h1 class="text-2xl mt-2">Subscribe to Our Newsletter</h1>
+                <p class="mb-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dolorem!</p>
+                <div class="newsletterbox  mx-auto w-80">
+                    <input type="text" class="" placeholder="Email">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container pb-3 pt-3">
+            <div class="row">
+                <div class="col-6 mt-2 mb-2">
+                    <h1 class="text-2xl mb-1">Contact Us</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi at neque, ea ab aut assumenda quam asperiores
+                        itaque earum expedita.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <p class="mt-2">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, <br>Bangalore-560016.</p>
+                    <p class="mt-1">
+                        Telephone :
+                        <strong>028-12312-21412</strong>
+                    </p>
+                    <p  class="mt-1">
+                        Email :
+                        <strong>someemail@gmail.com</strong>
+                    </p>
+                    <p class="mt-1">
+                        Location :
+                        <strong>Mumbai-India</strong>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <input type="text" placeholder="Name" class="mt-2">
+                    <input type="text" placeholder="Email" class="mt-1">
+                    <textarea placeholder="Your Message"  class="mt-1" ></textarea>
+                    <button class="mt-1 btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class=" bg-pastel">
+        <div class="container pt-3 pb-3">
+            <div class="row">
+                <div class="col-4 mb-2">
+                    <h2 class="mb-1">Logo</h2>
+                    <p  class="mt-1">Lorem ipsum dolor sit amet.</p>
+                    <div class="mt-2 mb-2">
+                        <a class="bg-primary social-icons">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a class="bg-primary  social-icons">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                        <a class="bg-primary  social-icons">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 mb-2">
+                    <h2  class="mb-1">Our Services</h2>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Pricing</a>
+                    </p>
+                    <p  class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a>
+                    </p>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Report</a>
+                    </p>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h2  class="mb-1">Our Company</h2>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    </p>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Career</a>
+                    </p>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Team</a>
+                    </p>
+                    <p class="mt-1">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Blog</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container p-1 text-center">
+            <p>Created by Anurag</p>
+        </div>
+    </footer>
 </body>
 
 </html>
-
+<script>
+    AOS.init();
+</script>
