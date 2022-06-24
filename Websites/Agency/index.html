@@ -34,7 +34,7 @@
                     <a href="#portfolio" rel="noopener noreferrer"  class="mr-2">Portfolio</a>
                     <a href="#services" rel="noopener noreferrer"  class="mr-2">Services</a>
                     <a href="#contact" rel="noopener noreferrer"  class="mr-2">Contact</a>
-                    <i class="ri-toggle-line text-2xl text-accent" onclick="changeTheme()" id="theme-toggler"></i>    
+                    <i class="ri-toggle-line text-2xl text-accent themetoggler" onclick="changeThemeWeb()" id="theme-toggler-web"></i>    
                 </div>
                 <div class="navbar-toggle">
                     <button class="menu" id="open-toggler" onclick="openNav()" >
@@ -46,13 +46,14 @@
                 </div>
             </div>
         </div>
-        <div id="topnav" class="topnav shadow">            
-            <a href="#home" rel="noopener noreferrer" onclick="closeNav()">Home</a>
+        <div id="topnav" class="topnav ">            
+            <a href="#home" rel="noopener noreferrer" onclick="closeNav()" id="homele">Home</a>
             <a href="#about" rel="noopener noreferrer" onclick="closeNav()">About</a>
             <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()">Services</a>
             <a href="#services" rel="noopener noreferrer" onclick="closeNav()">Portfolio</a>
             <a href="#contact" rel="noopener noreferrer" onclick="closeNav()">Contact</a>
-            <i class="ri-toggle-line text-2xl"  onclick="changeTheme()" id="theme-toggler"></i>
+            <i class="ri-toggle-line text-2xl text-accent" onclick="changeThemeMob()" id="theme-toggler-mob"></i>
+
         </div>
     </nav>
     <section id="home" class="home min-h-vh" >
@@ -65,6 +66,7 @@
                                 <div class="mt-3">
                                     <a class="btn btn-primary">Watch Work</a>
                                     <a class="btn btn-secondary"><i class="ri-arrow-down-line"></i></a>
+
 
                                 </div>
                             </div>

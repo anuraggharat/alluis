@@ -489,11 +489,11 @@ nav{
 }
 /* mobile device */
 @media screen and (max-width: 600px) {
-  
+    
     .navbar-toggle{
         display: block;
     }
-    .nav-link,.nav-link-scrolled{
+    .nav-link,.themetoggler{
         display: none;
     }
     .rev{

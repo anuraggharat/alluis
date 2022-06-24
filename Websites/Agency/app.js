@@ -13,22 +13,36 @@ function closeNav() {
 }
 var theme = "light";
 
-function changeTheme(){
+function changeThemeWeb(){
+var docBody = document.body;
+
+var themetoggweb = document.getElementById("theme-toggler-web");
 
   if (theme === 'light') {
-    document.getElementById("theme-toggler").classList.remove("ri-toggle-line");
-        document
-          .getElementById("theme-toggler")
-          .classList.add('ri-toggle-fill');
-          theme='dark'
+    themetoggweb.classList.remove("ri-toggle-line");
+    themetoggweb.classList.add('ri-toggle-fill');
+    theme='dark'
   } else {
-    document.getElementById("theme-toggler").classList.remove("ri-toggle-fill");
-    document
-      .getElementById("theme-toggler")
-      .classList.add('ri-toggle-line');
-    theme = "light";
-    
+    themetoggweb.classList.remove("ri-toggle-fill");
+    themetoggweb.classList.add("ri-toggle-line");
+    theme = "light";    
   }
-  var docBody = document.body;
   docBody.classList.toggle('dark-mode')
+}
+
+function changeThemeMob() {
+var docBody = document.body;
+
+var themetoggmob = document.getElementById("theme-toggler-mob");
+
+  if (theme === "light") {
+    themetoggmob.classList.remove("ri-toggle-line");
+    themetoggmob.classList.add("ri-toggle-fill");
+    theme = "dark";
+  } else {
+    themetoggmob.classList.remove("ri-toggle-fill");
+    themetoggmob.classList.add("ri-toggle-line");
+    theme = "light";
+  }
+  docBody.classList.toggle("dark-mode");
 }
