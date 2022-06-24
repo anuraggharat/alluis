@@ -34,7 +34,7 @@
                     <a href="#portfolio" rel="noopener noreferrer"  class="mr-2">Portfolio</a>
                     <a href="#services" rel="noopener noreferrer"  class="mr-2">Services</a>
                     <a href="#contact" rel="noopener noreferrer"  class="mr-2">Contact</a>
-                    <i class="ri-toggle-line text-2xl"></i>    
+                    <i class="ri-toggle-line text-2xl text-accent" onclick="changeTheme()" id="theme-toggler"></i>    
                 </div>
                 <div class="navbar-toggle">
                     <button class="menu" id="open-toggler" onclick="openNav()" >
@@ -52,7 +52,7 @@
             <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()">Services</a>
             <a href="#services" rel="noopener noreferrer" onclick="closeNav()">Portfolio</a>
             <a href="#contact" rel="noopener noreferrer" onclick="closeNav()">Contact</a>
-            <i class="ri-toggle-line text-2xl"></i>
+            <i class="ri-toggle-line text-2xl" id="theme-toggler"></i>
         </div>
     </nav>
     <section id="home" class="home min-h-vh" >
@@ -228,7 +228,7 @@
         </div>
     </section>
     <section id="newsletter" class=" pt-3 pb-3">
-        <div class="container bg-pastel pt-1 pb-3">
+        <div class="container bg-accent-secondary pt-1 pb-3">
             <div class="w-80 text-center mx-auto">
                 <h1 class="text-2xl mt-2">Subscribe to Our Newsletter</h1>
                 <p class="mb-2 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dolorem!</p>
@@ -273,7 +273,7 @@
             </div>
         </div>
     </section>
-    <footer class=" bg-pastel">
+    <footer class=" bg-accent-secondary">
         <div class="container pt-3 pb-3">
             <div class="row">
                 <div class="col-4 mb-2">

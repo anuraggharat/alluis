@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Snippets</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #ecf0f1;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    select{
+        width: 400px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <section>
+        <div>
+            <select name="avengers" id="avengers" multiple>
+                <option value="ironman">Iron Man</option>
+                <option value="captainamerica">Captain America</option>
+                <option value="hulk">Hulk</option>
+                <option value="thor">Thor</option>
+            </select>
+
+        </div>
+    </section>
+</body>
+</html>

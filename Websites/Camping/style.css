@@ -266,15 +266,6 @@ ul>li {
     background-color: aqua;
 }
 
-.overlay {
-    background-color: #111;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    opacity: .4;
-    left: 0%;
-}
 
 
 
@@ -286,7 +277,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: transparent;
 }
 
 .nav-toggle {
@@ -366,12 +356,13 @@ nav {
 
 /* styles for home */
 .bg-home {
-    background: url("./pexels-xue-guangjian-1687845.jpg") no-repeat fixed center;
+    background: url('./pexels-xue-guangjian-1687845.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
 }
 
 .icon-container {
@@ -508,8 +499,8 @@ footer {
 
 .overlay {
     position: absolute;
-    background-color: var(--dark-text);
-    opacity: .3;
+    background-image: linear-gradient(to bottom,rgba(11, 29, 38,0.2),rgba(11, 29, 38, 0.4),rgba(11, 29, 38, 0.6),rgba(11, 29, 38, 0.8) );
+    opacity: .9;
     height: 100%;
     width: 100%;
     top: 0;

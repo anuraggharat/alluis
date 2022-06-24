@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #ecf0f1;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .container{
+        width: 50%;
+        position: relative;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #111;
+        opacity: .5;
+    }
+    
+</style>
+
+<body>
+    <section>
+        
+        <div class="container">
+            <div class="overlay"></div>
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/01/FotoJet6592thfyg.jpg" alt="">
+        </div>
+        <h1>An image with an overlay</h1>
+    </section>
+</body>
+
+</html>
+<script>
+
+    
+</script>
