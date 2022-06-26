@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <nav class="z-index-10">
+        <div class="container">
+            <div class="navbar z-index-10">
+                <div>
+                    <h1 class="text-white">LOGO</h1>
+                </div>
+                <div class="nav-link z-index-10 " id="nav-links">
+                    <a href="#" rel="noopener noreferrer" class="mr-2">Home</a>
+                    <a href="#about" rel="noopener noreferrer" class="mr-2">About</a>
+                    <a href="#portfolio" rel="noopener noreferrer" class="mr-2">Portfolio</a>
+                    <a href="#services" rel="noopener noreferrer" class="mr-2">Services</a>
+                    <a href="#contact" rel="noopener noreferrer" class="mr-2">Contact</a>   
+                </div>
+                <div class="navbar-toggle">
+                    <button class="menu" id="open-toggler" onclick="openNav()">
+                        <i class="ri-menu-5-line"></i>
+                    </button>
+                    <button class="menu" id="close-toggler" onclick="closeNav()">
+                        <i class="ri-close-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="topnav" class="topnav  ">
+            <a href="#home" rel="noopener noreferrer" onclick="closeNav()" class="text-white" >Home</a>
+            <a href="#about" rel="noopener noreferrer" onclick="closeNav()">About</a>
+            <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()">Services</a>
+            <a href="#services" rel="noopener noreferrer" onclick="closeNav()">Portfolio</a>
+            <a href="#contact" rel="noopener noreferrer" onclick="closeNav()">Contact</a>
+
+        </div>
+    </nav>
+    <section class="home" id="home">
+    <div class="overlay z-index-5"></div>
+        <div class="container h-100 ">
+            <div class="home_text h-100 z-index-5">
+                <p class="z-index-5 text-white">Lorem ipsum dolor sit amet.</p>
+                <h1  class="z-index-5 text-4xl text-white">Where Design meets architecture!</h1>
+                <a href="http://" class="btn btn-primary z-index-5" target="_blank" rel="noopener noreferrer">Know more</a>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <img src="./assets/ldhome1.jpg" onclick="nextSlide('./assets/ldhome1.jpg',this)" class="slider-img active-img" alt="">
+            <img src="./assets/ldhome2.jpg" onclick="nextSlide('./assets/ldhome2.jpg',this)" class="slider-img" alt="">
+            <img src="./assets/ldhome3.jpg" onclick="nextSlide('./assets/ldhome3.jpg',this)" class="slider-img" alt="">
+        </div>
+    </section>
+    <section class=" mt-3 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 p-1">
+                    <img src="./assets/home1.jpg" width="100%" alt="">
+                </div>
+                <div class="col-6 p-1">
+                    <h1 class="text-2xl">A whole different kind of architectural firm.</h1>
+                    <p class=" mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis, expedita molestias maxime
+                        laboriosam excepturi odio amet id. Sed, amet.</p>
+                    <div class="mt-2">
+                    <a href="http://" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Check projects</a>
+
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class=" text-center">
+                <h1>Solutions designed for</h1>
+            </div>
+            <div class="row">
+                <div class="col-4 p-1">
+                    <img src="./assets/commercial.jpg" width="100%" alt="">
+                    <p>Commercial spaces</p>
+                </div>
+                <div class="col-4 p-1">
+                    <img src="./assets/office.jpg" width="100%" alt="">
+                    <p>Office spaces</p>
+                </div>
+                <div class="col-4 p-1">
+                    <img src="./assets/living.jpg" width="100%" alt="">
+                    <p>Living spaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container pb-3 pt-3">
+            <h1 class="text-2xl">Our Projects</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatibus.</p>
+        </div>
+        <div class="container">
+            <div class="row justify-between">
+                <div class="col-4 mb-1">
+                    <div class="card-1">
+                        <div class="overlay z-index-5"></div>
+                        <div class=" flex-col h-100 w-100 justify-end p-1">
+                            <h2 class="z-index-10 text-white">Project 1 </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-1">
+                    <div class="card-2">
+                        <div class="overlay z-index-5"></div>
+                        <div class=" flex-col h-100 w-100 justify-end p-1">
+                            <h2 class="z-index-10 text-white">Project 2 </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mb-1">
+                    <div class="card-3">
+                        <div class="overlay z-index-5"></div>
+                        <div class=" flex-col h-100 w-100 justify-end p-1">
+                            <h2 class="z-index-10 text-white">Project 3 </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-4">
+                        <div class="overlay z-index-5"></div>
+                        <div class=" flex-col h-100 w-100 justify-end p-1">
+                            <h2 class="z-index-10 text-white">Project 4 </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-5">
+                        <div class="overlay z-index-5"></div>
+                        <div class=" flex-col h-100 w-100 justify-end p-1">
+                            <h2 class="z-index-10 text-white">Project 5 </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card-6">
+                        <div class="overlay z-index-5"></div>
+                        <div class=" flex-col h-100 w-100 justify-end p-1">
+                            <h2 class="z-index-10 text-white">Project 6 </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex-col">
+                        <h1>Lorem Epsum</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate recusandae molestias omnis, quaerat repellat distinctio ipsa quasi aliquid debitis dicta ducimus voluptas sapiente enim mollitia blanditiis consequatur explicabo sequi.</p>
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    </body>
+
+</html>
+<script>
+    AOS.init();
+</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
