@@ -19,12 +19,11 @@
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 
 <body>
-    <nav class="z-index-10">
+    <nav class="z-index-20">
         <div class="container">
             <div class="navbar z-index-10">
                 <div>
@@ -91,8 +90,9 @@
     </section>
     <section>
         <div class="container">
-            <div class=" text-center">
-                <h1>Solutions designed for</h1>
+            <div class="pb-3 pt-3">
+                <h1 class="heading text-3xl">Solutions designed for</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quasi exercitationem nisi distinctio aperiam pariatur unde? Eius, qui nam. Vel!</p>
             </div>
             <div class="row">
                 <div class="col-4 p-1">
@@ -112,7 +112,7 @@
     </section>
     <section>
         <div class="container pb-3 pt-3">
-            <h1 class="text-2xl">Our Projects</h1>
+            <h1 class="text-3xl heading">Our Projects</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatibus.</p>
         </div>
         <div class="container">
@@ -168,43 +168,103 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide flex-col">
-                        <h1>Lorem Epsum</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate recusandae molestias omnis, quaerat repellat distinctio ipsa quasi aliquid debitis dicta ducimus voluptas sapiente enim mollitia blanditiis consequatur explicabo sequi.</p>
+    <section class="pb-3 pt-3">
+        <div class="container flex-row justify-between align-center">
+            <div>
+                <h1 class="text-3xl heading">Our Reviews</h1>
+            </div>
+            <div>
+                <button class="btn no-border"  onclick="scrollLeft()"><i class="ri-arrow-left-line  text-2xl"></i></button>
+                <button  class="btn no-border" onclick="scrollRight()"><i class="ri-arrow-right-line  text-2xl"></i></button>
+
+            </div>
+        </div>
+        <div class="review-container pt-3 pb-3" id="review-container">
+            <div class="review-card">
+                <h1 class="text-4xl quotation"><i class="ri-double-quotes-l"></i></h1>
+                <h1 class="text-2xl">The results are very Satisfying</h1>
+                <p class="mt-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore necessitatibus libero natus deserunt officiis impedit molestias architecto error neque sit?</p>
+                <div class="flex-row mt-2 ">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80"  alt="">
+                    <div class="ml-1 flex-col">
+                        <p class=""><b>Ralph Edward</b></p>
+                        <p class=""><small>Manager</small></p>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
                 </div>
-                <div class="swiper-pagination"></div>
+            </div>
+            <div class="review-card">
+                <h1 class="text-4xl quotation"><i class="ri-double-quotes-l"></i></h1>
+                <h1 class="text-2xl">The results are very Satisfying</h1>
+                <p class="mt-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore necessitatibus libero natus
+                    deserunt officiis impedit molestias architecto error neque sit?</p>
+                <div class="flex-row mt-2 ">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80"
+                        alt="">
+                    <div class="ml-1 flex-col">
+                        <p class=""><b>Ralph Edward</b></p>
+                        <p class=""><small>Manager</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card" >
+                <h1 class="text-4xl quotation"><i class="ri-double-quotes-l"></i></h1>
+                <h1 class="text-2xl">The results are very Satisfying</h1>
+                <p class="mt-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore necessitatibus libero natus
+                    deserunt officiis impedit molestias architecto error neque sit?</p>
+                <div class="flex-row mt-2 ">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFuJTIwcG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80"
+                        alt="">
+                    <div class="ml-1 flex-col">
+                        <p class=""><b>Ralph Edward</b></p>
+                        <p class=""><small>Manager</small></p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <section class="pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="http://" target="_blank" class="text-xl" rel="noopener noreferrer"><i class="ri-phone-line"></i></a>
+                    <div class="mt-1">
+                        <p>+91-902412112</p>
+                        <p>+91-902413312</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="http://" target="_blank" class="text-xl" rel="noopener noreferrer"><i class="ri-mail-line"></i></a>
+                    <div class="mt-1">
+                        <p>tonystark@gmail.com</p>
+                        <p>steverogers@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="http://" target="_blank" class="text-xl" rel="noopener noreferrer"><i class="ri-map-pin-line"></i></a>
+                    <div class="mt-1">
+                        <p>307, Mahavir Industrial Est, Off Mahakali</p>
+                        <p>400093 Mumbai, Maharashtra.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="w-100 flex-row justify-between p-1">
+            <div>
+                <p>Developed by Anurag</p>
+            </div>
+            <div>
+                <a href="http://" target="_blank" class="text-xl" rel="noopener noreferrer"><i class="ri-facebook-line"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="ri-twitter-line"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-line"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="ri-youtube-line"></i></a>
+            </div>
+        </div>
+    </footer>
     </body>
 
 </html>
 <script>
     AOS.init();
 </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>

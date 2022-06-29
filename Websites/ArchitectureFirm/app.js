@@ -54,3 +54,14 @@ function nextSlide(url,ele){
   bgimage.style.backgroundImage = `url(${url})`;
   ele.classList.add('active-img')
 }
+
+function scrollRight(){
+  var reviewcontainer = document.getElementById("review-container");
+
+  reviewcontainer.scrollBy(300, 0);
+}
+function scrollLeft() {
+  var reviewcontainer = document.getElementById("review-container");
+
+  reviewcontainer.scrollBy(100, 0);
+}
