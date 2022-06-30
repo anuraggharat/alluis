@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="z-index-20">
+    <nav class="z-index-20 w-100">
         <div class="container">
             <div class="navbar z-index-10">
                 <div>
@@ -32,9 +32,9 @@
                 <div class="nav-link z-index-10 " id="nav-links">
                     <a href="#" rel="noopener noreferrer" class="mr-2">Home</a>
                     <a href="#about" rel="noopener noreferrer" class="mr-2">About</a>
-                    <a href="#portfolio" rel="noopener noreferrer" class="mr-2">Portfolio</a>
-                    <a href="#services" rel="noopener noreferrer" class="mr-2">Services</a>
-                    <a href="#contact" rel="noopener noreferrer" class="mr-2">Contact</a>   
+                    <a href="#portfolio" rel="noopener noreferrer" class="mr-2">Solutions</a>
+                    <a href="#services" rel="noopener noreferrer" class="mr-2">Projects</a>
+                    <a href="#contact" rel="noopener noreferrer" class="mr-2">Reviews</a>   
                 </div>
                 <div class="navbar-toggle">
                     <button class="menu" id="open-toggler" onclick="openNav()">
@@ -46,22 +46,20 @@
                 </div>
             </div>
         </div>
-        <div id="topnav" class="topnav  ">
-            <a href="#home" rel="noopener noreferrer" onclick="closeNav()" class="text-white" >Home</a>
-            <a href="#about" rel="noopener noreferrer" onclick="closeNav()">About</a>
-            <a href="#portfolio" rel="noopener noreferrer" onclick="closeNav()">Services</a>
-            <a href="#services" rel="noopener noreferrer" onclick="closeNav()">Portfolio</a>
-            <a href="#contact" rel="noopener noreferrer" onclick="closeNav()">Contact</a>
-
-        </div>
+        
     </nav>
     <section class="home" id="home">
     <div class="overlay z-index-5"></div>
         <div class="container h-100 ">
-            <div class="home_text h-100 z-index-5">
-                <p class="z-index-5 text-white">Lorem ipsum dolor sit amet.</p>
-                <h1  class="z-index-5 text-4xl text-white">Where Design meets architecture!</h1>
-                <a href="http://" class="btn btn-primary z-index-5" target="_blank" rel="noopener noreferrer">Know more</a>
+            <div class="home_text z-index-5">
+                <div class="z-index-10">
+                    <p class=" text-white">Lorem ipsum dolor sit amet.</p>
+                    <h1 class=" text-4xl text-white heading">Where Design meets architecture!</h1>
+                    <div class="mt-2">
+                    <a href="http://" class="btn btn-primary z-index-5" target="_blank" rel="noopener noreferrer">Know more</a>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="slider-controls">
@@ -141,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 mb-1">
                     <div class="card-4">
                         <div class="overlay z-index-5"></div>
                         <div class=" flex-col h-100 w-100 justify-end p-1">
@@ -149,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 mb-1">
                     <div class="card-5">
                         <div class="overlay z-index-5"></div>
                         <div class=" flex-col h-100 w-100 justify-end p-1">
@@ -157,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 mb-1">
                     <div class="card-6">
                         <div class="overlay z-index-5"></div>
                         <div class=" flex-col h-100 w-100 justify-end p-1">
@@ -173,7 +171,7 @@
             <div>
                 <h1 class="text-3xl heading">Our Reviews</h1>
             </div>
-            <div>
+            <div class="flex-row ">
                 <button class="btn no-border"  onclick="scrollLeft()"><i class="ri-arrow-left-line  text-2xl"></i></button>
                 <button  class="btn no-border" onclick="scrollRight()"><i class="ri-arrow-right-line  text-2xl"></i></button>
 
@@ -265,6 +263,6 @@
     </body>
 
 </html>
-<script>
+<!-- <script>
     AOS.init();
-</script>
+</script> -->

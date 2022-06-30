@@ -302,7 +302,20 @@ img {
 .shadow:hover {
     box-shadow: rgba(100, 100, 111, 0.5) 0px 12px 32px 0px;
 }
-
+.card-1,
+.card-2,
+.card-3,
+.card-3,
+.card-4,
+.card-5,
+.card-6 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 350px;
+    position: relative;
+}
 /* flex utility classes */
 .flex-row{
     display: flex;
@@ -365,8 +378,8 @@ img {
 .no-border{
     border: none;
     background: none;
-        font-size: 1rem;
-            cursor: pointer;
+    font-size: 1rem;
+    cursor: pointer;
 }
 .btn-primary {
     border: 2px solid var(--accent-light);
@@ -498,7 +511,120 @@ textarea {
     font-size: 1.2rem;
 }
 
+/* home styles */
+.home {
+    background-image: url('./assets/ldhome1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    transition: .5s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
 
+.home_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slider-controls {
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 70px;
+    z-index: 5;
+    background-color: var(--primary-dark);
+    border-radius: 10px;
+}
+
+.slider-controls>img {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    background-color: #e6e6e6;
+    cursor: pointer;
+    transition: .5s all ease-out;
+}
+
+.slider-controls>.active-img {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.card-1 {
+    background-image: url('./assets/c.jpg');
+}
+
+.card-2 {
+    background-image: url('./assets/house4.jpg');
+}
+
+.card-3 {
+    background-image: url('assets/house5.jpg');
+}
+
+.card-4 {
+    background-image: url('assets/house6.jpg');
+}
+
+.card-5 {
+    background-image: url('./assets/resort1.jpg');
+}
+
+.card-6 {
+    background-image: url('./assets/resort2.jpg');
+}
+
+.review-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-left: 10%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.review-card {
+    min-width: 50vw;
+    background-color: #fefefe;
+    padding: 3rem 2rem;
+    margin-right: 2rem;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.quotation {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.review-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.review-container {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.review-card>div>img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
 
 nav {
     position: fixed;
@@ -562,13 +688,19 @@ nav {
     .row {
         height: 100%;
     }
-
+.review-card {
+    min-width: 70vw;
+    padding: 1rem 1rem;
+    margin-right: 1rem;
+}
     .column {
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
-
+    .text-2xl{
+        font-size: 1rem;
+    }
     .col-6,
     .col-4 {
         width: 100%;
@@ -613,7 +745,16 @@ nav {
     .icon-container img {
         width: 100%;
     }
-
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6 {
+        width: 100%;
+    }
+ 
     .md-flex-bottom {
         justify-content: flex-end;
     }
@@ -625,11 +766,16 @@ nav {
 
 /* mobile device */
 @media screen and (max-width: 600px) {
-
+    
     .navbar-toggle {
         display: block;
     }
-
+    .text-4xl{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1rem;
+    }
     .nav-link,
     .themetoggler {
         display: none;
@@ -644,144 +790,4 @@ nav {
         flex: 100%;
         max-width: 100%;
     }
-}
-
-/* home styles */
-.home{
-    background-image: url('./assets/ldhome1.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    transition: .5s all cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-.home_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-.slider-controls{
-    width: 200px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    top: 90% ;
-    right: 50%;
-    transform: translate(50%,-50%);
-    height: 70px;
-    z-index: 5;
-    background-color: var(--primary-dark);
-    border-radius: 10px;
-}
-.slider-controls>img{
-    height: 35px;
-    width: 35px;
-    border-radius: 10px;
-    background-color: #e6e6e6;
-    cursor: pointer;
-    transition: .5s all ease-out;
-}
-.slider-controls>.active-img {
-    transform: scale(1.5);
-    cursor: pointer;
-}
-
-.card-1,.card-2,.card-3,.card-3,.card-4,.card-5,.card-6{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90%;
-    height: 350px;
-    position: relative;
-}
-.card-1{
-    background-image: url('./assets/c.jpg');
-}
-.card-2 {
-    background-image: url('./assets/house4.jpg');
-}
-.card-3 {
-    background-image: url('assets/house5.jpg');
-}
-.card-4 {
-    background-image: url('assets/house6.jpg');
-}
-.card-5 {
-    background-image: url('./assets/resort1.jpg');
-}
-.card-6 {
-    background-image: url('./assets/resort2.jpg');
-}
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    min-height: 300px;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.review-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding-left: 10%;
-            scroll-snap-type: x mandatory;
-                scroll-behavior: smooth;
-}
-.review-card{
-    min-width: 50vw;
-    background-color: #fefefe;
-    padding: 3rem 2rem;
-    margin-right: 2rem;
-    color: #fff;
-    font-size: 0.9rem;
-}
-.quotation{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.review-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.review-container {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-}
-.review-card>div>img{
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
 }
