@@ -60,8 +60,7 @@ function scrollRight(){
 
   reviewcontainer.scrollBy(300, 0);
 }
-function scrollLeft() {
+function scrollToLeft() {
   var reviewcontainer = document.getElementById("review-container");
-
-  reviewcontainer.scrollBy(-300,0);
+  reviewcontainer.scrollBy(-100,0);
 }

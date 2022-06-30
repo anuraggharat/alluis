@@ -596,6 +596,7 @@ textarea {
 }
 
 .review-card {
+    border-radius: 10px;
     min-width: 50vw;
     background-color: #fefefe;
     padding: 3rem 2rem;
