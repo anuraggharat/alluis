@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Navbar Color</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    body{
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        /* font-family: 'Source Sans Pro', sans-serif; */
+    }
+    section{
+        min-height: 100vh;
+        width: 100%;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        background-color: #222;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        list-style-type: none;
+        margin-left: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
+</style>
+<body>
+    <nav id="nav">
+        <div>
+                    <h1>LOGO</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Services</a>                  
+                </li>
+                <li>
+                    <a href="">Gallary</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section></section>
+    <section></section>
+</body>
+</html>
+<script>
+    var nav = document.getElementById('nav')
+    window.onscroll = function(){
+        if(window.scrollY > 300){
+            nav.style.backgroundColor="#3a7b99"
+        } 
+        else{
+            nav.style.backgroundColor = "#222"
+
+        }
+    }
+</script>
