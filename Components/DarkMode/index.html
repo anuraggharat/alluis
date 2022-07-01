@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggler</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        color: #222;
+    }
+    .dark-mode{
+        background-color: #222;
+        color: #fff;
+    }
+    .dark-mode a,.dark-mode i{
+        color: #fff;
+    }
+    section {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        list-style-type: none;
+        margin-left: 2rem;
+    }
+    a{
+        text-decoration: none;
+        color:#222;
+    }
+    main{
+        width: 100%;
+        display: flex;
+    }
+    .col{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5rem;
+        min-height: 100%;
+    }
+    .switch{
+        font-size: 1.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+</style>
+
+<body id="body">
+    <nav id="nav">
+        <div>
+            <h1>LOGO</h1>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">Gallary</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+                <li>
+                   <button  class="switch"  onclick="switchMode()">
+                    <i class="ri-toggle-line" id="switch"></i>
+                   </button>
+                    
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <main>
+            <div class="col">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laboriosam iste esse accusamus voluptatem quidem soluta nesciunt necessitatibus odio quaerat!</p>
+            </div>
+            <div class="col">
+                <img src="./business-3d-man-and-dog.png" width="100%" alt="">
+            </div>
+        </main>
+    </section>
+    <section>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque id asperiores architecto sint accusantium ex ratione incidunt, ad quasi rerum nam, ducimus autem veniam voluptates neque fuga suscipit sed, hic vel tempora quae nobis quos iusto soluta. Ullam repellendus nihil, eos minima at repellat neque incidunt molestiae dolores eligendi, magni blanditiis ea dolor delectus cupiditate reprehenderit. Quos illo atque dolorem deleniti, odio, minima at unde sit dignissimos, veniam quaerat est repellat! Vero minima odit officiis, accusantium molestiae obcaecati officia dignissimos, alias eos sapiente sed inventore ex natus! Aliquam voluptas inventore, adipisci tempora ab, assumenda excepturi numquam commodi repellat consectetur sapiente? Dolorem ex nemo incidunt beatae, voluptate libero dolorum dolores. Facilis repellendus perspiciatis provident quisquam, ullam ipsam totam vitae. Ab, facere aliquam accusamus, nobis quis nam assumenda, reiciendis numquam non quidem nisi repudiandae. Modi ad vero placeat tempora distinctio quasi iure odio maxime ipsa expedita fugit qui quos nisi quia autem fugiat, culpa voluptatum illo quis, aut sed. Animi eveniet dolorum sint? Accusamus possimus itaque error voluptates voluptas corrupti ex, placeat ipsa, perferendis iusto libero non, exercitationem illum! Reprehenderit, dignissimos omnis! Nesciunt, repellendus? Modi commodi consectetur amet, corrupti ex quia sint fugiat dolorum facilis sed. Nam minima ex dignissimos ducimus ea!</p>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script>
+    var body = document.getElementById('body')
+    var switchbtn = document.getElementById('switch')
+    var currentMode = 'light'
+    function switchMode(){
+        body.classList.toggle('dark-mode')
+        if(currentMode==='light'){
+            switchbtn.classList.remove('ri-toggle-line')
+            switchbtn.classList.add('ri-toggle-fill')
+            currentMode='dark'
+        }else{
+            switchbtn.classList.remove('ri-toggle-fill')
+            switchbtn.classList.add('ri-toggle-line')
+            currentMode='light'
+        }         
+
+    }
+</script>
