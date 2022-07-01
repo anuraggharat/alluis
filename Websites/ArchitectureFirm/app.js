@@ -1,48 +1,25 @@
-// function openNav() {
-//   document.getElementById("topnav").style.marginTop = "10vh";
-//   document.getElementById("open-toggler").style.display = "none";
-//   document.getElementById("close-toggler").style.display = "block";
-// }
-// function closeNav() {
-//   document.getElementById("topnav").style.marginTop = "-50vh";
-//   document.getElementById("close-toggler").style.display = "none";
-//   document.getElementById("open-toggler").style.display = "block";
-// }
-// var theme = "light";
+function openNav() {
+  document.getElementById("sidebar").style.marginRight = "0vw";
+}
+function closeNav() {
+  document.getElementById("sidebar").style.marginRight = "-50vw";
+}
 
-// function changeThemeWeb() {
-//   var docBody = document.body;
 
-//   var themetoggweb = document.getElementById("theme-toggler-web");
+window.onscroll=function(){
+var navbar = document.getElementById("nav");
+console.log(navbar)
+  if(window.scrollY > 300){
 
-//   if (theme === "light") {
-//     themetoggweb.classList.remove("ri-toggle-line");
-//     themetoggweb.classList.add("ri-toggle-fill");
-//     theme = "dark";
-//   } else {
-//     themetoggweb.classList.remove("ri-toggle-fill");
-//     themetoggweb.classList.add("ri-toggle-line");
-//     theme = "light";
-//   }
-//   docBody.classList.toggle("dark-mode");
-// }
+    navbar.classList.add('bg-primary') 
+  }
+  else{
+    navbar.classList.remove("bg-primary");  
 
-// function changeThemeMob() {
-//   var docBody = document.body;
+  }
+}
 
-//   var themetoggmob = document.getElementById("theme-toggler-mob");
 
-//   if (theme === "light") {
-//     themetoggmob.classList.remove("ri-toggle-line");
-//     themetoggmob.classList.add("ri-toggle-fill");
-//     theme = "dark";
-//   } else {
-//     themetoggmob.classList.remove("ri-toggle-fill");
-//     themetoggmob.classList.add("ri-toggle-line");
-//     theme = "light";
-//   }
-//   docBody.classList.toggle("dark-mode");
-// }
 
 function nextSlide(url,ele){
   var allimg = document.getElementsByClassName('slider-img')

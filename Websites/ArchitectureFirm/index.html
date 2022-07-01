@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <nav class="z-index-20 w-100">
+    <nav class="z-index-20 w-100" id="nav">
         <div class="container">
             <div class="navbar z-index-10">
                 <div>
@@ -40,14 +40,33 @@
                     <button class="menu" id="open-toggler" onclick="openNav()">
                         <i class="ri-menu-5-line"></i>
                     </button>
-                    <button class="menu" id="close-toggler" onclick="closeNav()">
-                        <i class="ri-close-line"></i>
-                    </button>
+                    
                 </div>
             </div>
-        </div>
-        
+        </div> 
     </nav>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-heading">
+            <button class="menu" id="close-toggler" onclick="closeNav()">
+                <i class="ri-close-line"></i>
+            </button>
+        </div>
+        <div class="sidebar-body">
+            <div class="sidebar-link">
+                <a href="#" rel="noopener noreferrer" class="mr-2">Home</a>
+                <a href="#about" rel="noopener noreferrer" class="mr-2">About</a>
+                <a href="#portfolio" rel="noopener noreferrer" class="mr-2">Solutions</a>
+                <a href="#services" rel="noopener noreferrer" class="mr-2">Projects</a>
+                <a href="#contact" rel="noopener noreferrer" class="mr-2">Reviews</a>
+            </div>
+            <div class="sidebar-socialmedia">
+                <a href="http://" target="_blank" class=" text-white" rel="noopener noreferrer"><i class="ri-facebook-line"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="ri-twitter-line"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="ri-instagram-line"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="ri-youtube-line"></i></a>
+            </div>
+        </div>
+    </div>
     <section class="home" id="home">
     <div class="overlay z-index-5"></div>
         <div class="container h-100 ">
