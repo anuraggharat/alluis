@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggler</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    section{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        background: url('https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&w=600');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .slide-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+    .active-img{
+        transform: scale(1.2);
+    }
+    div{
+        display: flex;
+        width: 250px;
+        padding: 1rem;
+        justify-content: space-between;
+        background-color: #fff;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        border-radius: 10px;
+        transform: translate(-50%,50%);
+    }
+
+</style>
+
+<body id="body">
+    
+    <section class="home" id="home">
+            <div>
+                <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&w=600" onclick="changeSlide(this)" class="slide-img active-img" alt="">
+                <img src="https://images.pexels.com/photos/3601421/pexels-photo-3601421.jpeg?auto=compress&cs=tinysrgb&w=600" onclick="changeSlide(this)"
+                    class="slide-img" alt="">
+
+                <img src="https://images.pexels.com/photos/4602279/pexels-photo-4602279.jpeg?auto=compress&cs=tinysrgb&w=600" class="slide-img" alt="" onclick="changeSlide(this)" >
+
+
+            </div>
+    </section>
+   
+</body>
+
+</html>
+
+<script>
+   function changeSlide(ele) {
+        var allimg = document.getElementsByClassName('slide-img')
+        for (let index = 0; index < allimg.length; index++) {
+            allimg[index].classList.remove('active-img')
+        }
+        var bgimage = document.getElementById('home')
+        bgimage.style.backgroundImage = `url(${ele.src})`;
+        ele.classList.add('active-img')
+    }
+
+</script>
