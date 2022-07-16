@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirPods Product Card</title>
+    <title>Scroll To Top</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <style>
@@ -15,91 +15,49 @@
         box-sizing: border-box;
         margin: 0px;
         padding: 0px;
+        scroll-behavior: smooth;
     }
-
     body {
         width: 100%;
         height: 100%;
         font-family: 'Source Sans Pro', sans-serif;
         background-color: #F6F6F6;
     }
-
-    section {
+    section{
         height: 100vh;
         width: 100%;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
+        background-color:#1B2430;
+        color: #fff;
     }
-
-    img {
-        filter: drop-shadow(0.35rem 2rem 1rem rgba(181, 180, 180, 0.5));
-        animation: pulse 2s ease-in infinite;
-
-    }
-
-    .card {
-        width: 30%;
-        padding: 1rem;
-        background-color: #fff;
-        border-radius: 20px;
-        color: #9FA2B2;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-
-    .flex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .price {
-        font-size: 1.5rem;
-        color: #222;
-        font-weight: 600;
-    }
-
-    h1 {
-        color: #222;
-        margin: 10px 0px;
-        font-size: 2rem;
-    }
-
-    button {
-        width: 100%;
-        padding: 1rem;
+    a {
+        position: fixed;
+        bottom:10%;
+        right: 10%;
+        width: 50px;
+        height: 50px;
         border-radius: 10px;
-        border: none;
         font-size: 1.2rem;
-        font-weight: 400;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         color: #fff;
-        margin-top: 1rem;
         background-color: #9896f0;
-        gap: 10px;
+        text-decoration: none;
+        animation: pulse 1s ease-in infinite;
     }
 
     @keyframes pulse {
         0% {
             transform: translateY(0);
         }
-
-        25% {
-            transform: translateY(-12px);
-        }
-
         50% {
-            transform: translateY(0p);
+            transform: translateY(-5px);
         }
-
-        75% {
-            transform: translateY(2px);
-        }
-
         100% {
             transform: translateY(0);
         }
@@ -108,16 +66,16 @@
 
 <body id="body">
     <section class="home" id="home">
-        <div class="card">
-            <img src="./airpods.png" width="100%">
-            <h1>Airpods Pro</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <div class="flex">
-                <p>Only 5 left in stock</p>
-                <p class="price">₹25,000</p>
-            </div>
-            <button><i class="ri-shopping-cart-2-line"></i><span>Add to cart</span></button>
-        </div>
+        <h1>Section #1</h1>
+
+            <a href="#"><i class="ri-arrow-up-line"></i></a>
+    </section>
+    <section>
+        <h1>Section #2</h1>
+
+    </section>
+    <section>
+        <h1>Section #3</h1>
     </section>
 </body>
 
