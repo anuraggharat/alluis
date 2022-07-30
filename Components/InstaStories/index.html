@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Stories</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        background-color: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section{
+        height: 80vh;
+        background-color: #222;
+        width: 500px;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+    }
+    .row::-webkit-scrollbar{
+        display: none;
+    }
+    .card{
+        margin-right: .5rem;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        height: 80px;
+        min-width: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="row">
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" />
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" />
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1561828970-daff2303fe58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" />
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1552162864-987ac51d1177?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTN8NzYwODI3NzR8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" />
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1545194827-db87df1649d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTZ8NzYwODI3NzR8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60" />
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" />
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60" />
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

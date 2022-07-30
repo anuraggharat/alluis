@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Snippets</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: #ecf0f1;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    div{
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        animation: movediv 6s infinite;
+        position: relative;
+    }
+    @keyframes movediv {
+        0%{
+            top: 0px; 
+            left: 0px; 
+        }
+        25%{
+            top: 0px; 
+            left: 200px; 
+        }
+        50%{
+            top: 200px; 
+            left: 200px; 
+        }
+        75%{
+            top: 200px; 
+            left: 0px; 
+        }
+        100%{
+            top: 0px; 
+            left: 0px; 
+        }
+    }
+   
+</style>
+
+<body>
+    
+    <div>
+    </div>
+
+</body>
+
+
+</html>
