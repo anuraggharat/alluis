@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        background-color: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+    .card {
+        height: auto;
+        width:500px;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: #c2c2c2;
+        border-radius: 10px;
+    }
+    .header{
+        width: 100%;
+        height: 60px;
+        padding: .5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header>div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:.5rem;   
+    }
+    .header  img{
+        width: 50px;
+        height:50px;
+        border-radius: 100%;
+    }
+    .card-details{
+        padding: .5rem;
+    }
+    .bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    i{
+        font-size: 20px;
+    }
+    .details{
+        margin-top: 10px;
+    }
+    span{
+        font-size: 18px;
+        font-weight: medium;
+        color: #FFF;
+    }
+    p{
+        margin: 10px 0;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="header">
+            <div>
+                <img src="https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+                    alt="">
+                <p><span>Jone Doe</span></p>
+            </div>
+            <div>
+                <i class="ri-more-2-line"></i>
+            </div>
+        </div>
+        <main>
+            <img src="https://images.pexels.com/photos/789380/pexels-photo-789380.jpeg?auto=compress&cs=tinysrgb&w=1600" width="100%" alt="">
+        </main>
+        <div class="card-details">
+            <div class="bar">
+                <div>
+                    <i class="ri-heart-line"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                </div>
+                <div>
+                    <i class="ri-bookmark-line"></i>
+                </div>
+            </div>
+            <div class="details">
+                <p>309 Likes</p>
+                <p><span>jone_doe</span> Here is a super nice caption for my image!</p>
+                <p>View all 6 Comments</p>
+                <p><small>1 day ago</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
