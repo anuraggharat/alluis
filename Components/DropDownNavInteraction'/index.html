@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Interactions</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #dfdfdf;
+        font-family: 'Poppins';
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    span.icon {
+        background: black;
+        width: .5em;
+        height: .5em;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        padding: 0.3em;
+        display: flex;
+    }
+    svg {
+        width: .5em;
+        transition: transform .6s;
+    }
+    svg path {
+        stroke: white;
+        fill: none;
+    }
+    nav{
+        padding-bottom: 5em;
+        background-color: #fff;
+    }
+    nav span.inner {
+        transform: translateY(0);
+        transition: transform .6s;
+    }
+    section.dropdown {
+        position: absolute;
+        z-index: -1;
+        background: white;
+        top: 0;
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        transform: translateY(-100%);
+        transition: transform .6s;
+    }
+    ul {
+        list-style-type: none;
+        margin-bottom: 5em;
+        margin-left: 3em;
+    }
+    nav:hover span.inner {
+        transform: translateY(-100%);
+    }
+    nav:hover span.icon {
+        background: gray;
+    }
+    nav:hover span.icon svg {
+        transform: rotateZ(180deg);
+    }
+
+    nav:hover section.dropdown {
+        transform: translateY(0);
+    }
+    nav:hover ul li {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    nav > a {
+        display: inline-flex;
+        height: 1.2em;
+        overflow: hidden;
+        flex-direction: column;
+        font-size: 5rem;
+        justify-items: center;
+        line-height: 1.2em;
+        position: relative;
+        padding-right: 1.5em;
+        margin: 1em;
+    }
+    li:nth-of-type(1) { 
+        transition-delay: .2s; 
+    }
+    li:nth-of-type(2) { 
+        transition-delay: .3s; 
+    }
+    li:nth-of-type(3) { 
+        transition-delay: .4s; 
+    }
+    li:nth-of-type(4) { 
+        transition-delay: .5s; 
+    }
+    a {            
+        font-size: 2rem;
+    }
+    li {
+        opacity: 0;
+        transition: transform .5s, opacity .5s;
+        transition-delay: .3s;
+        transform: translateY(40px);
+    }
+
+</style>
+
+<body>
+    <nav>
+        <a href="#" class="link">
+            <span class="inner">
+                <span class="content">Work</span>
+            </span>
+            <span class="inner" aria-hidden="true">
+                <span class="content">Work</span>
+            </span>
+    
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20V4M5 13L12 20L19 13" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+            </span>
+        </a>
+    
+        <section class="dropdown">
+            <ul>
+                <li><a href="#">Identity</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Frontend Dev</a></li>
+            </ul>
+        </section>
+    </nav>
+    
+
+</body>
+
+</html>
+
+<script>
+
+</script>
