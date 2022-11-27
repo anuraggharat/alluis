@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaintWorklet</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #222;
+    }
+
+    section {
+        height: 100vh;
+        width: 100%;
+    }
+
+    div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .demo {
+        background: paint(static-gradient);
+        --static-gradient-size: 5;
+        --static-gradient-color: #7743DB;
+        --static-gradient-direction: to-bottom;
+    }
+
+    h1 {
+        font-size: 5rem;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="demo">
+            <h1>PAINT WORKLET - CSS Houdini</h1>
+        </div>
+    </section>
+    <script>
+        CSS.paintWorklet.addModule('https://unpkg.com/houdini-static-gradient/worklet.js')
+    </script>
+</body>
+
+</html>
+<script src="https://unpkg.com/houdini-static-gradient/worklet.js"></script>

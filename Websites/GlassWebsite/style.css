@@ -14,6 +14,11 @@ body {
 section{
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .circle-1{
     position: absolute;
@@ -33,12 +38,37 @@ section{
     width: 350px;
     border-radius: 50%;
 }
+.circle-3 {
+    position: absolute;
+    bottom: 5%;
+    right: 20%;
+    background-color: #2e2f5b;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.circle-4 {
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    background-color: #582a94;
+    opacity: .5;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
 .bg-1{
     background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+.bg-2 {
+    background-image: linear-gradient(to right, #222 0%, #444 100%);
+}
+.bg-3{
+    background-image: linear-gradient(to right, #4b6cb7 0%, #182848 100%);
+}
+.bg-4{
+    background:#121212;
 }
 .glass{
     height: 100vh;
@@ -48,21 +78,23 @@ section{
     height: 300px;
     width: 500px;
     border-radius:20px;
-    background: linear-gradient(to bottom left, rgba(255, 255, 255, .2), rgba(255, 255, 255, .7));
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
     z-index: 10;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 40px;
     color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
 }
 .credit-card > svg{
     position: absolute;
     top: 10%;
     right: 10%;
     fill: #fff;
-    
+
 }
 .credit-card > p{
     letter-spacing: 3px;
@@ -73,4 +105,7 @@ section{
 }
 .credit-card > h1{
     font-weight: normal;
+}
+.credit-card-4{
+        background: rgba(26, 112, 224, 0.1);
 }
